@@ -1,50 +1,73 @@
+import logic.parse.CalcList;
+import logic.parse.ParseToList;
+import user.Action;
 import user.CommandType;
-import logic.math.ParseString;
 import user.ConsoleHelper;
 import user.UserInterface;
 
+import java.util.List;
+
+/**
+ * Простейший консольный калькулятор
+ * 1+2*(100-95)^2-6
+ */
+
 public class Calculator {
     public static boolean debugMode = true;
-
 
     public static void main(String[] args) {
         try {
 
             UserInterface userInterface = new UserInterface(new ConsoleHelper());
+            Action action = new Action(userInterface);
+            action.showIntro();
+            CommandType commandType = CommandType.STRING;
 
-            userInterface.send("Для вызова справки введите help.");
-            userInterface.send("Введите строку для расчета или команду.");
-
-
-            while (true) {
-                String input = userInterface.get("Введите данне для работы:").trim();
-                CommandType command;
+            while (commandType != CommandType.QUIT) {
                 try {
-                    command = CommandType.valueOf(input.toUpperCase());
-                } catch (IllegalArgumentException e) {
-                    command = CommandType.STRING;
-                }
-
-                switch (command) {
-                    case QUIT:
-                        userInterface.send("Выход.");
-                        return;
-                    case HELP: // TODO: 31.07.18  показать помощь по программе
-                        userInterface.send("Запрошена помощь", debugMode);
+                    String sInput = action.userInput("Введите данные для работы:").trim();
+                    commandType = action.detectCommandType(sInput);
+                    if (commandType.isCommand()) {
+                        action.doCommand(commandType);
                         continue;
-                    default:
-                }
-                ParseString parse = new ParseString(input);
-                if (!parse.check()) {
-                    userInterface.send("Некорректный ввод данных");
-                    continue;
-                }
+                    }
+                    String sResult="";
 
+                    try {
 
+                        ParseToList parseToList = new ParseToList(sInput);
+                        List<String> list = parseToList.getWorkList();
+                        CalcList calcList = new CalcList(list);
+                        double result = calcList.calcFlatList();
+                        sResult=result+"";
+                        action.showResult(result);
+
+                    } catch (NumberFormatException e) {
+                        action.showError(e.getMessage());
+                        sResult=e.getMessage();
+                    } catch (IllegalArgumentException e) {
+                        action.showError(e.getMessage());
+                        sResult=e.getMessage();
+                    } catch (NullPointerException e) {
+                        action.showError(e.getMessage());
+                        sResult=e.getMessage();
+                    } catch (StringIndexOutOfBoundsException e) {
+                        action.showError(e.getMessage());
+                        sResult=e.getMessage();
+                    } catch (ArithmeticException e) {
+                        action.showError(e.getMessage());
+                        sResult=e.getMessage();
+                    }
+                action.saveHistory(sInput,sResult);
+
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
             }
+
+
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
-
 }
