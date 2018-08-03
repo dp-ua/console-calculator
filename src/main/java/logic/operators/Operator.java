@@ -20,11 +20,11 @@ public class Operator {
     /**
      * Финальная инициализация переменной, которая отвечает за стандартный оператор
      */
-    final TypeOperator defaultOperator = MULT; //Какой оператор будет выполнятся, если не указан оператор перед и после скобки
+    private final TypeOperator defaultOperator = MULT; //Какой оператор будет выполнятся, если не указан оператор перед и после скобки
 
     /**
-     *
-     * @param cOperator
+     *Принимает в конструкторе символ оператора и определяет что это за оператор
+     * @param cOperator символ оператора
      */
     public Operator(char cOperator) {
         typeOperator = getTypeByString(cOperator);
@@ -32,20 +32,19 @@ public class Operator {
 
     /**
      * Преобразовывает символ операции в тип операции
-     * @param cInput
-     * @return TypeOperator
+     * @param cInput символ оператора
+     * @return TypeOperator тип оператора
      */
     private TypeOperator getTypeByString(char cInput) {
-        TypeOperator result = NON;
         for (TypeOperator t : values())
             for (String s : t.getOperator())
                 if (cInput == s.charAt(0)) return t;
-        return result;
+        return NON;
     }
 
     /**
-     *
-     * @return
+     * геттер
+     * @return тип оператора
      */
     public TypeOperator getTypeOperator() {
         return typeOperator;
@@ -69,15 +68,17 @@ public class Operator {
 
     /**
      * Возвращает дефолтный оператор.
-     * @return
+     * @return TypeOperator возвращает оператор по-умолчанию
      */
     public String getDefaultOperator() {
         return defaultOperator.getOperator().get(0);
     }
 
+
     /**
-     *
-     * @return
+     * метод использовался больше в отладчике, чтобы сразу было видно какой тип оператора присвоился
+     * В программе нигде не используется
+     * @return String название оператора
      */
     @Override
     public String toString() {
