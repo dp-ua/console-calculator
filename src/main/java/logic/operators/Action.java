@@ -11,10 +11,10 @@ public class Action {
      * Приватная переменная
      * устанавливается в конструкторе и не изменяется
      */
-    private Operator operator;
+    private final Operator operator;
 
     /**
-     * @param operator
+     * @param operator тип оператора
      */
     public Action(Operator operator) {
         this.operator = operator;
@@ -22,10 +22,10 @@ public class Action {
 
     /**
      * Совершает нужную операцию, основываясь на типе установленной операции
-     * @param dA
-     * @param dB
-     * @return
-     * @throws IllegalArgumentException
+     * @param dA первый операнд
+     * @param dB второй операнд
+     * @return double результат операции
+     * @throws IllegalArgumentException ошибка в случае неудачи
      */
     public double calculate(double dA, double dB) throws IllegalArgumentException {
         switch (operator.typeOperator) {
