@@ -20,15 +20,15 @@ public class Action {
      * Интерфейс для общения с пользователем
      * Устанавливается в конструкторе. Не изменяется
      */
-    UserInterface userInterface;
-    DataInterface dataLoader;
+    private final UserInterface userInterface;
+    private final DataInterface dataLoader;
 
     /**
      * Базовый конструктор
      * Инициализирует интерфейс для общения с пользователем
      * Инициализует хранилище для истории
      *
-     * @param userInterface
+     * @param userInterface интерфейс пользователя
      */
     public Action(UserInterface userInterface) {
         this.userInterface = userInterface;
@@ -38,8 +38,8 @@ public class Action {
     /**
      * Сохраняем строку и результат операции в хранилище
      *
-     * @param sA
-     * @param sB
+     * @param sA основная строка
+     * @param sB результат
      */
     public void saveHistory(String sA, String sB) {
         dataLoader.saveToHistory(sA, sB);
@@ -48,7 +48,7 @@ public class Action {
     /**
      * Выполняет нужные действия в соотстветствии с типом команды
      *
-     * @param commandType
+     * @param commandType тип команды
      */
     public void doCommand(CommandType commandType) {
         switch (commandType) {
@@ -62,7 +62,7 @@ public class Action {
                 showHistory();
                 break;
             case HISTORYU:
-                showUniqHistory();
+                showUniqueHistory();
                 break;
             default:
         }
@@ -71,8 +71,8 @@ public class Action {
     /**
      * Показываем историю уникальных операций
      */
-    private void showUniqHistory() {
-        for (Map.Entry<String, String> pair : dataLoader.getListUniq().entrySet()) {
+    private void showUniqueHistory() {
+        for (Map.Entry<String, String> pair : dataLoader.getListUnique().entrySet()) {
             userInterface.send(pair.getKey() + " Результат: " + pair.getValue());
         }
 
@@ -91,14 +91,13 @@ public class Action {
      * Вводит данные от пользователя.
      * Предварительно посылает строку-уточнение,
      *
-     * @param sInput
-     * @return
-     * @throws IOException
+     * @param sInput строка для пользователя
+     * @return строка введеная пользователем
+     * @throws IOException ошибки чтения
      */
     public String userInput(String sInput) throws IOException {
         userInterface.send(sInput);
-        String input = userInterface.get().trim();
-        return input;
+        return userInterface.get().trim();
 
     }
 
@@ -107,28 +106,19 @@ public class Action {
      * Если тип не определяется как команда
      * по-умолчанию присваивается тип STRING
      *
-     * @param sInput
-     * @return
+     * @param sInput команда в виде строки
+     * @return CommandType тип команды
      */
     public CommandType detectCommandType(String sInput) {
-        CommandType commandType = CommandType.STRING;
         for (CommandType t : CommandType.values()) {
-            if (t.getCommand().equals(sInput.trim())) commandType = t;
+            if (t.getCommand().equals(sInput.trim())) return t;
         }
-        /*
-        try {
-            commandType = CommandType.valueOf(sInput.toUpperCase());
-        } catch (IllegalArgumentException e) {
-            commandType = CommandType.STRING;
-        }*/
-
-        return commandType;
+        return CommandType.STRING;
     }
 
     /**
      * Отображает результат операций пользователю
-     *
-     * @param dInput
+     * @param dInput вычисленное значение.
      */
     public void showResult(double dInput) {
         String s = String.format("::Результат: %.2f", dInput);
@@ -140,7 +130,7 @@ public class Action {
      * Учитывает все установленные значения операторов.
      * Выводит информацию о всех символах и приоритетах операций
      */
-    public void showHelp() {
+    private void showHelp() {
         userInterface.send("Консольный калькулятор");
         userInterface.send("Вычисляет значение введеной строки");
         userInterface.send("Входные данные могут быть: ");
@@ -172,8 +162,7 @@ public class Action {
 
     /**
      * Выводит сообщение с информацией об ошибке
-     *
-     * @param sInput
+     * @param sInput Текст ошибки
      */
     public void showError(String sInput) {
         userInterface.send("::Ошибка:: " + sInput);
