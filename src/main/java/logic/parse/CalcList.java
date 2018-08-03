@@ -17,7 +17,7 @@ public class CalcList {
      * Приватная переменная. Инициализируется в конструкторе
      * Изменяется в процессе работы над списком
      */
-    private List<String> list;
+    private final List<String> list;
 
     /**
      * Базовый конструктор
@@ -37,15 +37,15 @@ public class CalcList {
      */
     public double calcFlatList()  throws IllegalArgumentException,StringIndexOutOfBoundsException {
 
-        String sFlat = "";
+        StringBuilder sFlat = new StringBuilder();
         for (String s : list) {
             if ("".equals(s.trim())) continue;
             if (s.contains(TypeOperator.DELIMETER.getOperator().get(0))) {
                 String sCalc = calcFlatString(s);
-                sFlat += " " + sCalc;
-            } else sFlat += " " + s.trim();
+                sFlat.append(" ").append(sCalc);
+            } else sFlat.append( " ").append(s.trim());
         }
-        String result = calcFlatString(sFlat.trim());
+        String result = calcFlatString(sFlat.toString().trim());
         return Double.parseDouble(result);
     }
 
