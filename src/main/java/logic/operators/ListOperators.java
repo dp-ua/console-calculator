@@ -5,13 +5,15 @@ import java.util.Map;
 
 /**
  * Работает со списком типов доступных операций
+ * <p/>
+ * Используется для формирования справки по программе
  */
 public class ListOperators {
 
     /**
      * Выдает список всех операций по указанному приоритету
-     * @param priority
-     * @return
+     * @param priority приоритет операторов
+     * @return список операторов и их описание
      */
     public Map<String, String> getOperatorsByPriority(byte priority) {
         Map<String, String> map = new HashMap<String, String>();
