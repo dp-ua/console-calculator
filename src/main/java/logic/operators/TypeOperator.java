@@ -46,35 +46,35 @@ public enum TypeOperator {
 
     /**
      *Базовый приватный конструктор
-     * @param operator
-     * @param priority
-     * @param description
+     * @param operator значения оператора. Задается в виде списка
+     * @param priority приоритет
+     * @param description описание
      */
-    private TypeOperator(List<String> operator, byte priority,String description) {
+     TypeOperator(List<String> operator, byte priority,String description) {
         this.operator = operator;
         this.priority = priority;
         this.description=description;
     }
 
     /**
-     *
-     * @return
+     * геттер
+     * @return String описание
      */
     public String getDescription() {
         return description;
     }
 
     /**
-     *
-     * @return
+     * геттер
+     * @return List<String> список операторов</String>
      */
     public List<String> getOperator() {
         return operator;
     }
 
     /**
-     *
-     * @return
+     * гетер
+     * @return приоритет
      */
     public byte getPriority() {
         return priority;
