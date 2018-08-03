@@ -13,11 +13,11 @@ public class DataInterface {
     /**
      * Хранилище данных
      */
-    DataStory dataStory;
+    private final DataStory dataStory;
 
     /**
      * Базовый конструктор
-     * @param dataStory
+     * @param dataStory место хранения данных
      */
     public DataInterface(DataStory dataStory) {
         this.dataStory = dataStory;
@@ -25,7 +25,7 @@ public class DataInterface {
 
     /**
      * Возвращает полный список операций
-     * @return
+     * @return List<String[]> список всех записей в хранилище</String[]>
      */
     public List<String[]> getListFull() {
         return dataStory.getList();
@@ -33,9 +33,9 @@ public class DataInterface {
 
     /**
      * Возвращает список уникальных операций
-     * @return
+     * @return Map<String,String> возращает список уникальных записей из базы</String,String>
      */
-    public Map<String,String> getListUniq() {
+    public Map<String,String> getListUnique() {
         Map<String,String> map = new HashMap<String, String>();
         for (String[] s : getListFull()             ) {
             map.put(s[0],s[1]);
@@ -46,13 +46,12 @@ public class DataInterface {
 
     /**
      * Сохраняем данные в базу
-     * @param sA
-     * @param sB
-     * @return
+     * @param sA исходная строка
+     * @param sB результат
+     * @return успешная или не успешная запись в базу
      */
     public boolean saveToHistory(String sA, String sB) {
-        if (dataStory.add(sA,sB))         return true;
-        return false;
+        return dataStory.add(sA,sB);
     }
 
 }
