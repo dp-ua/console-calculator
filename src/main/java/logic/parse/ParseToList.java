@@ -102,6 +102,7 @@ public class ParseToList {
             if (!"".equals(s)) list.add(0, s);
         }
 
+        if (list.contains(openBr)) throw new IllegalArgumentException("Ошибка разбора скобок. Проверьте правильность выражения");
 
         return list;
     }
