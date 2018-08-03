@@ -2,24 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85ef7b74-d60b-483b-b6f4-dfe5bec268d8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/history/DataInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/history/DataStory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/logic/operators/Action.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/logic/operators/ListOperators.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/logic/operators/Operator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/logic/operators/TypeOperator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/logic/parse/CalcList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/logic/parse/ParseToList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/user/Action.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/math/ParseString.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/user/CommandType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/user/CommandType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/user/ConsoleHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/user/ConsoleHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/user/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/user/UserInterface.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -376,13 +359,13 @@
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info active="true" anchor="right" id="Maven Projects" order="3" visible="true" weight="0.32982844" />
+      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.32982844" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.329718" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.47180045" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989154" visible="true" weight="0.257886" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989154" visible="true" weight="0.257886" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
