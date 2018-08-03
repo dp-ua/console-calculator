@@ -17,11 +17,11 @@ public class CalcList {
      * Приватная переменная. Инициализируется в конструкторе
      * Изменяется в процессе работы над списком
      */
-    List<String> list;
+    private List<String> list;
 
     /**
      * Базовый конструктор
-     * @param list
+     * @param list список операндов в виде "плоских" строк и операторов
      */
     public CalcList(List<String> list) {
         this.list = list;
@@ -32,10 +32,10 @@ public class CalcList {
      * Используется рекурсия для парсинга спецсимвола для вычисления значений в скобках
      * В итоге список преобразуется в "плоскую" строку где есть только значения и операторы
      * все скобки уже разобраны и значения вычислены
-      * @return
-     * @throws Exception
+      * @return результат
+     * @throws IllegalArgumentException,StringIndexOutOfBoundsException ошибки при работе пробрасывает дальше
      */
-    public double calcFlatList() throws Exception {
+    public double calcFlatList()  throws IllegalArgumentException,StringIndexOutOfBoundsException {
 
         String sFlat = "";
         for (String s : list) {
@@ -51,20 +51,24 @@ public class CalcList {
 
 
     /**
+     *
      * Функция высчитывает значение строки в которой нет скобок.
      * Строка может содержать вложенные скобки, помеченные спецсимволом
      * Самая последняя вложенная скобка стоит в конце строки
      * Разбор строки начинаем с самого конца.
      * Используем рекурсию до тех пор, пока не посчитаем значение всех вложенных скобок
-     * @param sInput
-     * @return String
+     *
+     * @param sInput "плоская" строка
+     * @return результат вычислений
+     * @throws IllegalArgumentException ошибка
+     * @throws StringIndexOutOfBoundsException ошибка
      */
-    private String calcFlatString(String sInput) throws Exception {
+    private String calcFlatString(String sInput) throws IllegalArgumentException,StringIndexOutOfBoundsException{
         double dResult;
 
 
         try {
-            String sWork = new String(sInput);
+            String sWork = sInput;
             String delimeter = TypeOperator.DELIMETER.getOperator().get(0);
 
             while (sWork.contains(delimeter)) {
@@ -72,8 +76,7 @@ public class CalcList {
                 sWork = sWork.substring(0, iLast) + calcFlatString(sWork.substring(iLast + 1));
             }
 
-            List<String> list = new ArrayList<String>();
-            list.addAll(Arrays.asList(sWork.split(" ")));
+            List<String> list = new ArrayList<String>(Arrays.asList(sWork.split(" ")));
 
             int now = 1;
             while (list.size() > 3) {
