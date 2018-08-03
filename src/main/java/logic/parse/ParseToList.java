@@ -24,11 +24,11 @@ public class ParseToList {
      * Инициализируется только в конструкторе.
      * В процессе не изменяется
      */
-    String sInput;
+    private String sInput;
 
     /**
      * Конструктор
-     * @param sInput
+     * @param sInput входная строка
      */
     public ParseToList(String sInput) {
         this.sInput = sInput;
@@ -39,23 +39,23 @@ public class ParseToList {
      * "Плоская" строка - строка без скобок.
      * Операция внутри скобок помечается системным символом и подлежит разборки с конца строки
      * т.к. может иметь вложенные скобки.
-     * @return
-     * @throws IllegalArgumentException
-     * @throws NullPointerException
+     * @return List<String> </String>возвращает список "плоских строк
+     * @throws IllegalArgumentException произошла ошибка при разборе аргументов
+     * @throws NullPointerException введена пустая строка.
      */
     public List<String> getWorkList() throws IllegalArgumentException, NullPointerException {
         List<String> list = new ArrayList<String>();
+
+        if ("".equals(sInput.trim())) throw new NullPointerException("Введена пустая строка");
+
         String openBr = TypeOperator.OPENBRACKETS.getOperator().get(0);
-        String closeBr = TypeOperator.CLOSEBRACKETS.getOperator().get(0);
-        int openBracket = sInput.replaceAll("[^" + openBr + "]", "").length();
-        int closeBracket = sInput.replaceAll("[^" + closeBr + "]", "").length();
+
         String delimeter = TypeOperator.DELIMETER.getOperator().get(0);
         if (sInput.contains(delimeter)) throw new IllegalArgumentException("В строке введен служебный символ "+delimeter);
-        if ("".equals(sInput.trim())) throw new NullPointerException("Введена пустая строка");
-        if (openBracket != closeBracket)
-            throw new IllegalArgumentException("Не совпадает колличество открытых и закрытых скобок");
-        Stack<String> stack = new Stack<String>();
+
+
         String sTmp = "";
+        Stack<String> stack = new Stack<String>();
 
         for (char c : sInput.toCharArray()) {
             Operator operator = new Operator(c);
