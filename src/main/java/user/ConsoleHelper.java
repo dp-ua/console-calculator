@@ -13,22 +13,21 @@ public class ConsoleHelper {
 
     /**
      * Вывод сообщения на консоль
-     * @param message
+     * @param sInput  строка для пользователя
      */
-    public void write(String message){
-        System.out.println(message);
+    public void write(String sInput){
+        System.out.println(sInput);
 
     }
 
     /**
      * Ввод данных с консоли
-     * @return
-     * @throws IOException
+     * @return String данные, прочитанные с консоли
+     * @throws IOException ошибка при чтении
      */
     public String read() throws IOException {
         BufferedReader reader= new BufferedReader(new InputStreamReader(System.in));
-        String result = reader.readLine();
-        return result;
+        return reader.readLine();
     }
 
 }
