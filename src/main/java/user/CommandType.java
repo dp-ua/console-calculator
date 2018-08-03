@@ -20,34 +20,34 @@ public enum CommandType {
     /**
      * Приватная переменная. Синтаксис команды
      */
-    private String command;
+    private final String command;
 
     /**
      * Описание команды. Используется для формирования справки по программе
      */
-    private String description;
+    private final String description;
 
     /**
      * Базовый конструктор
-     * @param command
-     * @param description
+     * @param command команда
+     * @param description  описание
      */
-    private CommandType(String command, String description) {
+    CommandType(String command, String description) {
         this.command = command;
         this.description = description;
     }
 
     /**
-     *
-     * @return
+     * геттер
+     * @return команда
      */
     public String getCommand() {
         return command;
     }
 
     /**
-     *
-     * @return
+     * геттер
+     * @return описание
      */
     public String getDescription() {
         return description;
@@ -55,7 +55,7 @@ public enum CommandType {
 
     /**
      * Все что не STRING - команда
-     * @return
+     * @return boolean команда или нет
      */
     public boolean isCommand() {
         switch (this) {
