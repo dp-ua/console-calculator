@@ -13,7 +13,6 @@ import java.util.List;
  */
 
 public class Calculator {
-    public static boolean debugMode = true;
 
     public static void main(String[] args) {
         try {
@@ -31,34 +30,31 @@ public class Calculator {
                         action.doCommand(commandType);
                         continue;
                     }
-                    String sResult="";
-
+                    String sResult;
                     try {
-
                         ParseToList parseToList = new ParseToList(sInput);
                         List<String> list = parseToList.getWorkList();
                         CalcList calcList = new CalcList(list);
                         double result = calcList.calcFlatList();
-                        sResult=result+"";
+                        sResult = result + "";
                         action.showResult(result);
-
                     } catch (NumberFormatException e) {
                         action.showError(e.getMessage());
-                        sResult=e.getMessage();
+                        sResult = e.getMessage();
                     } catch (IllegalArgumentException e) {
                         action.showError(e.getMessage());
-                        sResult=e.getMessage();
+                        sResult = e.getMessage();
                     } catch (NullPointerException e) {
                         action.showError(e.getMessage());
-                        sResult=e.getMessage();
+                        sResult = e.getMessage();
                     } catch (StringIndexOutOfBoundsException e) {
                         action.showError(e.getMessage());
-                        sResult=e.getMessage();
+                        sResult = e.getMessage();
                     } catch (ArithmeticException e) {
                         action.showError(e.getMessage());
-                        sResult=e.getMessage();
+                        sResult = e.getMessage();
                     }
-                action.saveHistory(sInput,sResult);
+                    action.saveHistory(sInput, sResult);
 
                 } catch (Exception e) {
                     e.printStackTrace();
