@@ -1,37 +1,31 @@
-package user;
+package calculator.user;
 
 /**
- * Типы доступных команд
- * <p/>
- * Программирование действий по командам задается в классе user.Action
- *
+ * Type of commands
  */
 public enum CommandType {
-    /**
-     * Типы команд
-     */
+
+    INTRO("intro", "Вызов приветствия"),
     STRING("", "вычисляемая строка"),
     HISTORY("history", "полная история операций"),
-    HISTORYU("history unique","история операций. Только уникальные строки"),
+    HISTORYU("history unique", "история операций. Только уникальные строки"),
     HELP("help", "Вызов помощи"),
-    QUIT("quit", "Выход из программы")
-    ;
+    QUIT("quit", "Выход из программы");
 
     /**
-     * Приватная переменная. Синтаксис команды
+     * command
      */
     private final String command;
 
     /**
-     * Описание команды. Используется для формирования справки по программе
+     * description of command
      */
     private final String description;
 
     /**
-     * Базовый конструктор
-     *
-     * @param command команда
-     * @param description  описание
+     * set command and description
+     * @param command string
+     * @param description  string
      */
     CommandType(String command, String description) {
         this.command = command;
@@ -39,24 +33,24 @@ public enum CommandType {
     }
 
     /**
-     * геттер
-     * @return команда
+     * return command
+     * @return String
      */
     public String getCommand() {
         return command;
     }
 
     /**
-     * геттер
-     * @return описание
+     * return description of command
+     * @return String
      */
     public String getDescription() {
         return description;
     }
 
     /**
-     * Все что не STRING - команда
-     * @return boolean команда или нет
+     * type is a command or not
+     * @return if Type is STRING - return false. Other - return true
      */
     public boolean isCommand() {
         switch (this) {
@@ -66,6 +60,4 @@ public enum CommandType {
                 return true;
         }
     }
-
-
 }

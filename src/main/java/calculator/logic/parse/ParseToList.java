@@ -1,53 +1,43 @@
-package logic.parse;
+package calculator.logic.parse;
 
-import logic.operators.Operator;
-import logic.operators.TypeOperator;
+import calculator.logic.operators.Operator;
+import calculator.logic.operators.TypeOperator;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
 /**
- * Класс для работы с первичной введеной строкой.
- * <p/>
- * Преобразует входную строку в список, где каждый элемент представляет
- * из себя "плоскую" строку без скобок
- * в которой есть:
- * либо только числ
- * оператор
- * выражение с числами и оператором - результат разбора скобки
+ * class for work with input string
  */
 public class ParseToList {
 
     /**
-     *Входная не изменяема строка
-     * Инициализируется только в конструкторе.
-     * В процессе не изменяется
+     * string for work
      */
     private final String sInput;
 
     /**
-     * Конструктор
-     * @param sInput входная строка
+     * set input string
+     * @param sInput
      */
     public ParseToList(String sInput) {
         this.sInput = sInput;
     }
 
     /**
-     * Разбирает входную строку на список из "плоских" строк
-     * "Плоская" строка - строка без скобок.
-     * Операция внутри скобок помечается системным символом и подлежит разборки с конца строки
-     * т.к. может иметь вложенные скобки.
-     * @return List<String> </String>возвращает список "плоских строк
-     * @throws IllegalArgumentException произошла ошибка при разборе аргументов
-     * @throws NullPointerException введена пустая строка.
+     * parse main string to list of "flat" lines
+     * "Flat" string - string without brackets
+     * @return list of "flat" lines
+     * @throws IllegalArgumentException if there were errors during the parsing of the line
+     * @throws NullPointerException if take blank string
      */
     public List<String> getWorkList() throws IllegalArgumentException, NullPointerException {
         List<String> list = new ArrayList<String>();
 
         if ("".equals(sInput.trim())) throw new NullPointerException("Введена пустая строка");
 
+        String defOperator = TypeOperator.DEF.getOperator().get(0);
         String openBr = TypeOperator.OPENBRACKETS.getOperator().get(0);
 
         String delimeter = TypeOperator.DELIMETER.getOperator().get(0);
@@ -64,7 +54,7 @@ public class ParseToList {
             } else if (operator.getTypeOperator()==TypeOperator.OPENBRACKETS) {
                 if (sTmp.trim().length() > 0) {
                     stack.push(sTmp.trim());
-                    stack.push(operator.getDefaultOperator());
+                    stack.push(defOperator);
                 }
                 stack.push(openBr);
                 sTmp = "";
@@ -89,7 +79,7 @@ public class ParseToList {
                 sTmp = "";
             } else {
                 if (stack.size() > 0)
-                    if (stack.peek().charAt(0) == delimeter.charAt(0)) stack.push(operator.getDefaultOperator());
+                    if (stack.peek().charAt(0) == delimeter.charAt(0)) stack.push(defOperator);
                 sTmp += c;
             }
         }

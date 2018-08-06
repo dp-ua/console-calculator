@@ -1,14 +1,11 @@
-package logic.parse;
+package calculator.logic.parse;
 
-import logic.operators.Operator;
-import logic.operators.TypeOperator;
+import calculator.logic.operators.TypeOperator;
 import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import static org.junit.Assert.*;
 
 public class ParseToListTest {
 

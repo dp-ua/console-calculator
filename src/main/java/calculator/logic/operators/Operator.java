@@ -1,39 +1,29 @@
-package logic.operators;
+package calculator.logic.operators;
 
-import static logic.operators.TypeOperator.*;
+import static calculator.logic.operators.TypeOperator.*;
 
 /**
- * Класс для работы со списком операторов TypeOperator
- * <p/>
- * кроме работы с текущим оператором также задает такой параметр как defaultOperator
- * данный оператор необходим для корректного парсинга строки вида 1(1+2)
- * Пропущенный оператор  перед или после скобки заменяется на этот стандартный оператор
+ * class for work with basic operators
  */
 public class Operator {
 
     /**
-     * Базовая приватная переменная.
-     * Инициализируется в конструкторе и не изменяется
+     * Type of operator
      */
     TypeOperator typeOperator;
 
     /**
-     * Финальная инициализация переменной, которая отвечает за стандартный оператор
-     */
-    private final TypeOperator defaultOperator = MULT; //Какой оператор будет выполнятся, если не указан оператор перед и после скобки
-
-    /**
-     *Принимает в конструкторе символ оператора и определяет что это за оператор
-     * @param cOperator символ оператора
+     * set the basic operator
+     * @param cOperator symbol of working operator
      */
     public Operator(char cOperator) {
         typeOperator = getTypeByString(cOperator);
     }
 
     /**
-     * Преобразовывает символ операции в тип операции
-     * @param cInput символ оператора
-     * @return TypeOperator тип оператора
+     * Specifies the type of operator by the entered character
+     * @param cInput character of operator
+     * @return TypeOperator
      */
     private TypeOperator getTypeByString(char cInput) {
         for (TypeOperator t : values())
@@ -43,16 +33,16 @@ public class Operator {
     }
 
     /**
-     * геттер
-     * @return тип оператора
+     * get Type of Operator
+     * @return TypeOperator
      */
     public TypeOperator getTypeOperator() {
         return typeOperator;
     }
 
     /**
-     * Проверяет, оператор это или нет. К операторам не относятся числа, разделители и служебные символы
-     * @return boolean
+     * checks the type of the operator
+     * @return returns true if the operator is specified
      */
     public boolean isOperator() {
         switch (typeOperator) {
@@ -67,21 +57,33 @@ public class Operator {
     }
 
     /**
-     * Возвращает дефолтный оператор.
-     * @return TypeOperator возвращает оператор по-умолчанию
+     * Make the necessary actions on the specified operands
+     * @param dA first operand
+     * @param dB second operand
+     * @return result of operations
+     * @throws IllegalArgumentException if take non specified result
      */
-    public String getDefaultOperator() {
-        return defaultOperator.getOperator().get(0);
+    public double calculate(double dA, double dB) throws IllegalArgumentException {
+        switch (typeOperator) {
+            case PLUS:
+                return dA + dB;
+            case MINUS:
+                return dA - dB;
+            case MULT:
+                return dA * dB;
+            case DIV:
+                double r = dA / dB;
+                if (Double.isInfinite(r)) throw new ArithmeticException("Деление на ноль");
+                if (Double.isNaN(r)) throw new ArithmeticException("Результат деления: NaN");
+                return r;
+            case PERCENT:
+                return (dA / 100) * dB;
+            case POW:
+                return Math.pow(dA, dB);
+            case NON:
+            default:
+                throw new IllegalArgumentException("Неверный тип оператора");
+        }
     }
 
-
-    /**
-     * метод использовался больше в отладчике, чтобы сразу было видно какой тип оператора присвоился
-     * В программе нигде не используется
-     * @return String название оператора
-     */
-    @Override
-    public String toString() {
-        return typeOperator.toString();
-    }
 }

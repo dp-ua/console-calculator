@@ -5,29 +5,28 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
- * Ввод-Вывод
- * <p/>
- * Работа с консолью
+ * Class for work with console
  */
-public class ConsoleHelper {
+public class ConsoleInOut implements UserInOut {
 
-    /***
-     * Вывод сообщения на консоль
-     * @param sInput  строка для пользователя
+    /**
+     * Write message to console
+     * @param message
      */
-    public void write(String sInput){
-        System.out.println(sInput);
+    public void write(String message) {
+        System.out.println(message);
 
     }
 
     /**
-     * Ввод данных с консоли
-     * @return String данные, прочитанные с консоли
-     * @throws IOException ошибка при чтении
+     * Read message from console
+     * @return
+     * @throws IOException
      */
     public String read() throws IOException {
-        BufferedReader reader= new BufferedReader(new InputStreamReader(System.in));
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         return reader.readLine();
     }
+
 
 }

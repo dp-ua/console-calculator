@@ -1,54 +1,54 @@
-package logic.operators;
+package calculator.logic.operators;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+
 import static java.util.Arrays.asList;
 
 /**
- * перечисление операторов и их приоритета
- * <p/>
-  * В данном классе задаются сами операции, их описание и символы, по которым они
- * парсятся из строки
- * При добавлении новых названий операций список действий нужно прописать
- * отдельно в классе operators.Action
-  */
+ * List of all supported operators
+ */
 public enum TypeOperator {
 
     /**
-     * Список операторов
+     * List of opertarors
      */
-    NON(asList("non"),(byte)0,"пустой оператор"),
+
     PLUS(asList("+"), (byte) 1,"сложение"),
     MINUS(asList("-"), (byte) 1,"вычитание"),
     MULT(asList("*"), (byte) 2,"умножение"),
     DIV(asList("/",":"), (byte) 2,"деление"),
     PERCENT(asList("%"), (byte) 3,"процент"),
-    POW(asList("^"), (byte) 3,"возведение в степень"),
-    OPENBRACKETS(asList("("),(byte)4,"открывающая скобка"),
-    CLOSEBRACKETS(asList(")"),(byte)4,"закрывающая скобка"),
-    DELIMETER(asList("$"),(byte)5,"служебный символ");
+    POW(asList("^"), (byte) 4,"возведение в степень"),
+    OPENBRACKETS(asList("("),(byte)8,"открывающая скобка"),
+    CLOSEBRACKETS(asList(")"),(byte)8,"закрывающая скобка"),
+    DELIMETER(asList("$"),(byte)9,"служебный символ"),
+    NON(asList("non"),(byte)0,"пустой оператор"),
+    DEF(asList("*"),(byte)0,"оператор по-умолчанию"),
+
+    ;
 
     /**
-     * Приватная переменная.
-     * Список, где указываются символы, соответствующие данной операции
+     * enumeration of operator symbols
      */
     private List<String> operator;
 
     /**
-     * Приоритет операторов
+     * priority of Operators
      */
     private byte priority;
 
-    /**
-     * Описание оператора.
-     * Используется для формирования help
+    /** Descriptions of all opertators
+     *  used to generate help
      */
     private String description;
 
     /**
-     *Базовый приватный конструктор
-     * @param operator значения оператора. Задается в виде списка
-     * @param priority приоритет
-     * @param description описание
+     * set all basic params of Enum
+     * @param operator list of operators
+     * @param priority priority of operator
+     * @param description descriptions
      */
      TypeOperator(List<String> operator, byte priority,String description) {
         this.operator = operator;
@@ -57,26 +57,27 @@ public enum TypeOperator {
     }
 
     /**
-     * геттер
-     * @return String описание
+     * get Description
+     * @return description
      */
     public String getDescription() {
         return description;
     }
 
     /**
-     * геттер
-     * @return List<String> список операторов</String>
+     * Get list of operators
+     * @return List<String> all supported operators</>
      */
     public List<String> getOperator() {
         return operator;
     }
 
     /**
-     * гетер
-     * @return приоритет
+     * get priority of operator
+     * @return
      */
     public byte getPriority() {
         return priority;
     }
+
 }

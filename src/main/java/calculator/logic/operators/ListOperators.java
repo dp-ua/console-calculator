@@ -1,21 +1,30 @@
-package logic.operators;
+package calculator.logic.operators;
 
 import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Работает со списком типов доступных операций
- * <p/>
- * Используется для формирования справки по программе
+ * Class work with operators list. Used for generate Help
  */
 public class ListOperators {
+    /**
+     * Priority
+     */
+    byte priority;
 
     /**
-     * Выдает список всех операций по указанному приоритету
-     * @param priority приоритет операторов
-     * @return список операторов и их описание
+     * set priority
+     * @param priority of operator
      */
-    public Map<String, String> getOperatorsByPriority(byte priority) {
+    public ListOperators(byte priority) {
+        this.priority = priority;
+    }
+
+    /**
+     * returns a list of operators with the specified priority
+     * @return Map<>operator + description</>
+     */
+    public Map<String, String> getOperators() {
         Map<String, String> map = new HashMap<String, String>();
         for (TypeOperator t : TypeOperator.values())
             if (t.getPriority() == priority) for (String s : t.getOperator()) map.put(s, t.getDescription());

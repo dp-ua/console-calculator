@@ -6,7 +6,7 @@ import org.junit.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CalcListTest {
+public class CalcFlatListTest {
 
     @Test
     public void calcFlatList_Simple() {
@@ -15,8 +15,8 @@ public class CalcListTest {
         list.add("+");
         list.add("2");
 
-        CalcList calcList = new CalcList(list);
-        double res = calcList.calcFlatList();
+        CalcFlatList calcFlatList = new CalcFlatList(list);
+        double res = calcFlatList.calculate();
 
         Assert.assertEquals(3, res, 0.009);
     }
@@ -28,8 +28,8 @@ public class CalcListTest {
         list.add("*");
         list.add("$2 + 7");
 
-        CalcList calcList = new CalcList(list);
-        double res = calcList.calcFlatList();
+        CalcFlatList calcFlatList = new CalcFlatList(list);
+        double res = calcFlatList.calculate();
 
         Assert.assertEquals(18, res, 0.009);
     }

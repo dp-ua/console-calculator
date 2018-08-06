@@ -1,8 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85ef7b74-d60b-483b-b6f4-dfe5bec268d8" name="Default" comment="">
+    <list default="true" id="85ef7b74-d60b-483b-b6f4-dfe5bec268d8" name="Default" comment="Корректировка доков">
+      <change afterPath="$PROJECT_DIR$/src/main/java/calculator/logic/parse/CalcFlatLine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/history/DataStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/history/DataStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/history/History.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/history/History.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/history/StorageInMemory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/history/StorageInMemory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/logic/operators/ListOperators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/logic/operators/ListOperators.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/logic/operators/Operator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/logic/operators/Operator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/logic/operators/TypeOperator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/logic/operators/TypeOperator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/logic/parse/CalcFlatList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/logic/parse/CalcFlatList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/logic/parse/CalcFlatString.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/logic/parse/ParseToList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/logic/parse/ParseToList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/user/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/user/Command.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/user/CommandType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/user/CommandType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/user/ConsoleInOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/user/ConsoleInOut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/user/UserInOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/user/UserInOut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/user/UserView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/calculator/user/UserView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/calculator/logic/operators/OperatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/calculator/logic/operators/OperatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/calculator/logic/parse/CalcFlatListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/calculator/logic/parse/CalcFlatListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/calculator/logic/parse/ParseToListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/calculator/logic/parse/ParseToListTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -18,11 +39,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Calculator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Calculator.java">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/calculator/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="25" column="53" lean-forward="true" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
+            <state relative-caret-position="387">
+              <caret line="45" column="31" selection-start-line="45" selection-start-column="31" selection-end-line="45" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -30,35 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommandType.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/user/CommandType.java">
+      <file leaf-file-name="String.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.sdkman/candidates/java/8.0.172-zulu/src.zip!/java/lang/String.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ListOperators.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/logic/operators/ListOperators.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TypeOperator.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/logic/operators/TypeOperator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1125">
-              <caret line="81" column="1" lean-forward="true" selection-start-line="81" selection-start-column="1" selection-end-line="81" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-465">
+              <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -70,6 +67,8 @@
       <list>
         <option value="Enum" />
         <option value="Specification" />
+        <option value="JUnit4 Test Class" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -86,6 +85,7 @@
       <find>openBr</find>
       <find>map</find>
       <find>throw new</find>
+      <find>dete</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src/main/java</dir>
@@ -104,40 +104,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/test.java" />
-        <option value="$PROJECT_DIR$/src/.gitignore" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/main/java/logic/math/PolishParse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/logic/math/Actions.java" />
-        <option value="$PROJECT_DIR$/src/main/java/logic/math/TypeOperators.java" />
-        <option value="$PROJECT_DIR$/src/main/java/logic/math/Operators.java" />
-        <option value="$PROJECT_DIR$/src/main/java/logic/math/TypeOperator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/logic/math/Operator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/logic/math/Action.java" />
-        <option value="$PROJECT_DIR$/src/main/java/logic/math/Delimeter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/logic/math/Brackets.java" />
         <option value="$PROJECT_DIR$/src/main/java/logic/operators/Brackets.java" />
         <option value="$PROJECT_DIR$/src/main/java/logic/operators/Actions.java" />
         <option value="$PROJECT_DIR$/src/main/java/user/Actions.java" />
         <option value="$PROJECT_DIR$/src/main/java/logic/parse/ParseBrackets.java" />
         <option value="$PROJECT_DIR$/src/main/java/logic/math/ParseString.java" />
-        <option value="$PROJECT_DIR$/src/main/java/logic/operators/ListOperators.java" />
-        <option value="$PROJECT_DIR$/src/main/java/logic/parse/ParseToList.java" />
-        <option value="$PROJECT_DIR$/src/main/java/logic/operators/Action.java" />
-        <option value="$PROJECT_DIR$/src/main/java/logic/operators/Operator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/logic/operators/TypeOperator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/logic/parse/CalcList.java" />
-        <option value="$PROJECT_DIR$/src/main/java/user/ConsoleHelper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/user/UserInterface.java" />
         <option value="$PROJECT_DIR$/src/main/java/history/dataStory.java" />
         <option value="$PROJECT_DIR$/src/main/java/history/dataLoader.java" />
         <option value="$PROJECT_DIR$/src/main/java/history/DataLoader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Calculator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/history/DataStory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/user/Action.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/logic/operators/ActionTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/logic/parse/ParseToListTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/logic/operators/OperatorTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/history/DataInterface.java" />
+        <option value="$PROJECT_DIR$/src/main/java/history/DataStory.java" />
+        <option value="$PROJECT_DIR$/src/test/java/history/DataStoryTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/logic/operators/Action.java" />
+        <option value="$PROJECT_DIR$/src/main/java/logic/operators/ListOperators.java" />
+        <option value="$PROJECT_DIR$/src/main/java/logic/operators/Operator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/logic/operators/TypeOperator.java" />
+        <option value="$PROJECT_DIR$/src/test/java/logic/parse/CalcListTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/user/Action.java" />
+        <option value="$PROJECT_DIR$/src/main/java/user/UserInterface.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Calculator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/logic/parse/ParseToList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/logic/parse/CalcList.java" />
         <option value="$PROJECT_DIR$/src/main/java/user/CommandType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/user/ConsoleHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/calculator/history/DataInterface.java" />
+        <option value="$PROJECT_DIR$/src/main/java/calculator/user/userInOut.java" />
+        <option value="$PROJECT_DIR$/src/main/java/calculator/history/Hystory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/calculator/user/UI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/calculator/logic/operators/Action.java" />
+        <option value="$PROJECT_DIR$/src/main/java/calculator/logic/parse/CalcFlatString.java" />
+        <option value="$PROJECT_DIR$/src/main/java/calculator/user/Action.java" />
+        <option value="$PROJECT_DIR$/src/main/java/calculator/history/DataStorage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/calculator/history/StorageInMemory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/calculator/logic/operators/TypeOperator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/calculator/logic/operators/Operator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/calculator/logic/operators/ListOperators.java" />
+        <option value="$PROJECT_DIR$/src/main/java/calculator/logic/parse/CalcFlatList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/calculator/logic/parse/ParseToList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/calculator/logic/parse/CalcFlatLines.java" />
+        <option value="$PROJECT_DIR$/src/main/java/calculator/logic/parse/CalcFlatLine.java" />
+        <option value="$PROJECT_DIR$/src/main/java/calculator/user/UserView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/calculator/user/CommandType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/calculator/user/ConsoleInOut.java" />
+        <option value="$PROJECT_DIR$/src/main/java/calculator/user/UserInOut.java" />
+        <option value="$PROJECT_DIR$/src/main/java/calculator/user/Command.java" />
+        <option value="$PROJECT_DIR$/src/main/java/calculator/history/History.java" />
+        <option value="$PROJECT_DIR$/src/main/java/calculator/Main.java" />
       </list>
     </option>
   </component>
@@ -205,6 +222,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="calculator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simple-calculator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simple-calculator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="calculator" type="462c0819:PsiDirectoryNode" />
               <item name="history" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -213,6 +239,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="calculator" type="462c0819:PsiDirectoryNode" />
               <item name="logic" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -221,42 +248,49 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-              <item name="operators" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="simple-calculator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="simple-calculator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="calculator" type="462c0819:PsiDirectoryNode" />
               <item name="user" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="simple-calculator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="simple-calculator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="simple-calculator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: junit:junit:4.12" type="70bed36:NamedLibraryElementNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="Shelf.Project.Settings" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="logic.parse" />
+      <recent name="history" />
+      <recent name="logic.operators" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="calculator" />
       <recent name="logic.operators" />
       <recent name="logic" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -275,13 +309,105 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="Calculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Calculator" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="calculator.Main" />
       <module name="simple-calculator" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="CalcFlatListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="simple-calculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="calculator.logic.parse.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="calculator.logic.parse" />
+      <option name="MAIN_CLASS_NAME" value="calculator.logic.parse.CalcFlatListTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="CalcFlatListTest.calcFlatList_OneBracket" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="simple-calculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="calculator.logic.parse.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="calculator.logic.parse" />
+      <option name="MAIN_CLASS_NAME" value="calculator.logic.parse.CalcFlatListTest" />
+      <option name="METHOD_NAME" value="calcFlatList_OneBracket" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="OperatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="simple-calculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="calculator.logic.operators.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="calculator.logic.operators" />
+      <option name="MAIN_CLASS_NAME" value="calculator.logic.operators.OperatorTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="ParseToListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="simple-calculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="calculator.logic.parse.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="calculator.logic.parse" />
+      <option name="MAIN_CLASS_NAME" value="calculator.logic.parse.ParseToListTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -321,9 +447,20 @@
       <properties />
       <listeners />
     </configuration>
+    <list>
+      <item itemvalue="JUnit.CalcFlatListTest" />
+      <item itemvalue="JUnit.CalcFlatListTest.calcFlatList_OneBracket" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.OperatorTest" />
+      <item itemvalue="JUnit.ParseToListTest" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Calculator" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.ParseToListTest" />
+        <item itemvalue="JUnit.CalcFlatListTest" />
+        <item itemvalue="JUnit.OperatorTest" />
+        <item itemvalue="JUnit.CalcFlatListTest.calcFlatList_OneBracket" />
       </list>
     </recent_temporary>
   </component>
@@ -338,7 +475,187 @@
       <option name="presentableId" value="Default" />
       <updated>1533033229329</updated>
     </task>
+    <task id="LOCAL-00001" summary="Небольшой рефакторинг функции парсинга&#10;избавился от одной ненужной проверки входных аргументов&#10;Откорректировал доки">
+      <created>1533293044771</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1533293044771</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Юнит тесты доступных операций.">
+      <created>1533293144998</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1533293144998</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Корректировка кода после проверки на юнит тестах.&#10;Дополнительная проверка на парсинг скобок в результирующем списке">
+      <created>1533295229944</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1533295229944</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Юнит тест на корректный парсинг входной строки">
+      <created>1533295309085</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1533295309085</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Юнит тесты для класса Operator">
+      <created>1533296202011</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1533296202011</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Корректировка доков">
+      <created>1533296523470</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1533296523470</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Корректировка доков">
+      <created>1533297778357</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1533297778358</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Тесты для DataStore">
+      <created>1533297825575</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1533297825575</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Тесты для DataStore">
+      <created>1533297837044</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1533297837044</updated>
+    </task>
+    <task id="LOCAL-00010" summary="корректировка доков">
+      <created>1533298183992</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1533298183992</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Корректировка доков">
+      <created>1533298469944</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1533298469944</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Корректировка доков">
+      <created>1533298927020</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1533298927020</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Корректировка доков">
+      <created>1533299091919</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1533299091919</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Юнит тесты на функцию вычисления значений из списка &quot;плоских&quot; строк">
+      <created>1533300062907</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1533300062907</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Корректировка доков&#10;Рефакторинг. Удаление избыточности">
+      <created>1533300508707</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1533300508707</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Корректировка доков&#10;и небольшой рефакторинг">
+      <created>1533300915901</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1533300915901</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Корректировка доков">
+      <created>1533301047357</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1533301047357</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Корректировка доков">
+      <created>1533301160542</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1533301160542</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Корректировка доков">
+      <created>1533301376019</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1533301376019</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Убрал ненужное">
+      <created>1533301492675</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1533301492675</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Рефакторинг &#10;замена строковой переменной на StringBuilder">
+      <created>1533304621309</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1533304621309</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="CalcListTest_calcFlatList_Simple - 2018.08.03 at 15h 37m 23s.xml">
+      <configuration name="CalcListTest.calcFlatList_Simple" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CalcListTest - 2018.08.03 at 15h 39m 06s.xml">
+      <configuration name="CalcListTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CalcListTest - 2018.08.03 at 15h 39m 11s.xml">
+      <configuration name="CalcListTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CalcListTest - 2018.08.03 at 15h 39m 24s.xml">
+      <configuration name="CalcListTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CalcListTest - 2018.08.03 at 15h 39m 36s.xml">
+      <configuration name="CalcListTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CalcListTest_calcFlatList_OneBracket - 2018.08.03 at 15h 40m 23s.xml">
+      <configuration name="CalcListTest.calcFlatList_OneBracket" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OperatorTest - 2018.08.06 at 12h 18m 13s.xml">
+      <configuration name="OperatorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OperatorTest - 2018.08.06 at 12h 20m 19s.xml">
+      <configuration name="OperatorTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CalcFlatListTest - 2018.08.06 at 12h 20m 28s.xml">
+      <configuration name="CalcFlatListTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ParseToListTest - 2018.08.06 at 12h 20m 35s.xml">
+      <configuration name="ParseToListTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -351,34 +668,47 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.329718" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.329718" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="2" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.32982844" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="6" visible="true" weight="0.17044826" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.47180045" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989154" visible="true" weight="0.257886" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.38611713" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Designer" order="3" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989154" visible="true" weight="0.18040952" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" sideWeight="0.5010846" side_tool="true" weight="0.257886" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info id="Favorites" order="5" sideWeight="0.5010846" side_tool="true" weight="0.257886" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
+      <window_info anchor="bottom" id="Dependency Viewer" order="10" weight="0.329718" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.329718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
     </layout>
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -409,23 +739,40 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Небольшой рефакторинг функции парсинга&#10;избавился от одной ненужной проверки входных аргументов" />
+    <MESSAGE value="Небольшой рефакторинг функции парсинга&#10;избавился от одной ненужной проверки входных аргументов&#10;Откорректировал доки" />
+    <MESSAGE value="Юнит тесты доступных операций." />
+    <MESSAGE value="Корректировка кода после проверки на юнит тестах.&#10;Дополнительная проверка на парсинг скобок в результирующем списке" />
+    <MESSAGE value="Юнит тест на корректный парсинг входной строки" />
+    <MESSAGE value="Юнит тесты для класса Operator" />
+    <MESSAGE value="Тесты для DataStore" />
+    <MESSAGE value="корректировка доков" />
+    <MESSAGE value="Юнит тесты на функцию вычисления значений из списка &quot;плоских&quot; строк" />
+    <MESSAGE value="Корректировка доков&#10;Рефакторинг. Удаление избыточности" />
+    <MESSAGE value="Корректировка доков&#10;и небольшой рефакторинг" />
+    <MESSAGE value="Убрал ненужное" />
+    <MESSAGE value="Рефакторинг &#10;замена строковой переменной на StringBuilder" />
+    <MESSAGE value="Корректировка доков" />
+    <option name="LAST_COMMIT_MESSAGE" value="Корректировка доков" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/user/Action.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/calculator/user/Action.java</url>
           <line>53</line>
           <properties />
           <option name="timeStamp" value="82" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/user/Action.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/calculator/user/Action.java</url>
           <line>84</line>
           <properties />
           <option name="timeStamp" value="83" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="84" />
+      <option name="time" value="87" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -490,28 +837,8 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/user/CommandType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="59" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/math/ParseString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="47" column="16" lean-forward="true" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/parse/ParseToList.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/logic/math/ParseString.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/calculator/logic/parse/ParseToList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1230">
           <caret line="82" selection-start-line="82" selection-end-line="82" />
@@ -521,7 +848,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/operators/TypeOperator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/calculator/logic/operators/TypeOperator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
@@ -531,32 +858,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/operators/Operator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/calculator/logic/operators/Operator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="e#781#782#0" expanded="true" />
-            <element signature="e#827#828#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/operators/Action.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/calculator/logic/operators/Action.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/operators/Brackets.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Calculator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/logic/operators/Brackets.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/calculator/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="34" column="17" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
@@ -573,7 +890,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Calculator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/calculator/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="705">
           <caret line="47" column="18" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
@@ -590,13 +907,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/math/ParseString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="2" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/logic/math/ParseString.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -604,14 +915,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/math/ParseString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Calculator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/logic/math/ParseString.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/calculator/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
@@ -636,13 +941,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.sdkman/candidates/java/8.0.172-zulu/src.zip!/java/lang/Enum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
@@ -650,155 +948,284 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/operators/Brackets.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/logic/operators/Brackets.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/logic/math/ParseString.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/logic/math/PolishParse.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/logic/operators/test.spec" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/history/testClass.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/calculator/logic/operators/ActionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/math/ParseString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="2" selection-start-line="36" selection-start-column="2" selection-end-line="36" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/math/PolishParse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/operators/test.spec">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/operators/Operator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="71" column="14" lean-forward="true" selection-start-line="71" selection-start-column="14" selection-end-line="71" selection-end-column="14" />
-          <folding>
-            <element signature="e#1922#1923#0" expanded="true" />
-            <element signature="e#1981#1982#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/parse/CalcList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="59" column="21" lean-forward="true" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#468#469#0" expanded="true" />
-            <element signature="e#500#501#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/parse/ParseToList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="40" column="41" lean-forward="true" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="41" />
+        <state relative-caret-position="360">
+          <caret line="24" column="49" lean-forward="true" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/user/ConsoleHelper.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="366">
+          <caret line="208" selection-start-line="208" selection-end-line="208" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/user/UserInterface.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/statements/ExpectException.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="46" column="5" lean-forward="true" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
-          <folding>
-            <element signature="e#253#254#0" expanded="true" />
-            <element signature="e#291#292#0" expanded="true" />
-            <element signature="e#415#416#0" expanded="true" />
-            <element signature="e#453#454#0" expanded="true" />
-            <element signature="e#618#619#0" expanded="true" />
-            <element signature="e#683#684#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="349">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Calculator.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="25" column="53" lean-forward="true" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="210">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/operators/Action.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="20" lean-forward="true" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/calculator/history/DataStory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="11" column="53" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/history/DataInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="637">
-          <caret line="48" column="16" lean-forward="true" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/history/DataStory.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/calculator/history/DataStoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        <state relative-caret-position="75">
+          <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/user/Action.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/calculator/logic/operators/Action.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="987">
-          <caret line="188" selection-start-line="188" selection-end-line="188" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1045#1046#0" expanded="true" />
-            <element signature="e#1092#1093#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="405">
+          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/user/CommandType.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/calculator/user/Action.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/operators/ListOperators.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        <state relative-caret-position="178">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/operators/TypeOperator.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/calculator/logic/parse/CalcFlatListTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1125">
-          <caret line="81" column="1" lean-forward="true" selection-start-line="81" selection-start-column="1" selection-end-line="81" selection-end-column="1" />
+        <state relative-caret-position="195">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/calculator/logic/parse/ParseToListTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1710">
+          <caret line="114" lean-forward="true" selection-start-line="114" selection-end-line="114" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/calculator/logic/operators/OperatorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/calculator/history/DataStorage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/calculator/logic/operators/TypeOperator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1047">
+          <caret line="76" column="14" lean-forward="true" selection-start-line="76" selection-start-column="14" selection-end-line="76" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1553#1554#0" expanded="true" />
+            <element signature="e#1587#1588#0" expanded="true" />
+            <element signature="e#1694#1695#0" expanded="true" />
+            <element signature="e#1725#1726#0" expanded="true" />
+            <element signature="e#1852#1853#0" expanded="true" />
+            <element signature="e#1883#1884#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/calculator/logic/operators/Operator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="747">
+          <caret line="87" column="4" selection-start-line="87" selection-start-column="4" selection-end-line="87" selection-end-column="4" />
+          <folding>
+            <element signature="e#323#324#0" expanded="true" />
+            <element signature="e#380#381#0" expanded="true" />
+            <element signature="e#884#885#0" expanded="true" />
+            <element signature="e#919#920#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/calculator/logic/operators/ListOperators.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="7" lean-forward="true" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#320#321#0" expanded="true" />
+            <element signature="e#360#361#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/calculator/logic/parse/ParseToList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="32" column="48" lean-forward="true" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/calculator/logic/parse/CalcFlatList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#359#360#0" expanded="true" />
+            <element signature="e#391#392#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/calculator/logic/parse/CalcFlatLine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="68" column="33" lean-forward="true" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#409#410#0" expanded="true" />
+            <element signature="e#443#444#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.sdkman/candidates/java/8.0.172-zulu/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-465">
+          <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/calculator/user/CommandType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="52" column="68" selection-start-line="52" selection-start-column="68" selection-end-line="52" selection-end-column="68" />
+          <folding>
+            <element signature="e#832#833#0" expanded="true" />
+            <element signature="e#862#863#0" expanded="true" />
+            <element signature="e#960#961#0" expanded="true" />
+            <element signature="e#994#995#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/calculator/user/ConsoleInOut.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="26" lean-forward="true" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/calculator/user/UserInOut.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/calculator/user/UserView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="7" lean-forward="true" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+          <folding>
+            <element signature="e#308#309#0" expanded="true" />
+            <element signature="e#350#351#0" expanded="true" />
+            <element signature="e#459#460#0" expanded="true" />
+            <element signature="e#499#500#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/calculator/user/Command.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="837">
+          <caret line="158" lean-forward="true" selection-start-line="158" selection-end-line="158" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#692#693#0" expanded="true" />
+            <element signature="e#732#733#0" expanded="true" />
+            <element signature="e#4366#4367#0" expanded="true" />
+            <element signature="e#4419#4420#0" expanded="true" />
+            <element signature="e#4582#4583#0" expanded="true" />
+            <element signature="e#4625#4626#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/calculator/history/History.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="30" column="7" lean-forward="true" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#600#601#0" expanded="true" />
+            <element signature="e#648#649#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/calculator/history/StorageInMemory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/calculator/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="45" column="31" selection-start-line="45" selection-start-column="31" selection-end-line="45" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -883,6 +1310,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Maven: junit:junit:4.12</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

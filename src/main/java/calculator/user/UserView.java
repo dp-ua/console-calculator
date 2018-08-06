@@ -4,22 +4,36 @@ import java.io.IOException;
 
 
 /**
- * Интерфейс общения с пользователем
- * <p/>
- * Использует consoleHelper
+ * class to communicate with the user
  */
-public class UI {
+public class UserView {
 
+    /**
+     * Interface for communications
+     */
     private final UserInOut userInOut;
 
-    public UI(UserInOut userInOut) {
+    /**
+     * set the basic interface
+     * @param userInOut
+     */
+    public UserView(UserInOut userInOut) {
         this.userInOut = userInOut;
     }
 
-    public void send(String sInput) {
-        userInOut.write(sInput);
+    /**
+     * send message to user
+     * @param message
+     */
+    public void send(String message) {
+        userInOut.write(message);
     }
 
+    /**
+     * get message from user
+     * @return String
+     * @throws IOException
+     */
     public String get() throws IOException {
         return userInOut.read();
     }

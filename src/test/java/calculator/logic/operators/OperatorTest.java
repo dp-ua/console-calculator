@@ -1,10 +1,7 @@
-package logic.operators;
+package calculator.logic.operators;
 
-import com.sun.org.apache.xpath.internal.operations.Plus;
 import org.junit.Assert;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class OperatorTest {
 

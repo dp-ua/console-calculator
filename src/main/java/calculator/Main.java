@@ -1,66 +1,77 @@
-import logic.parse.CalcList;
-import logic.parse.ParseToList;
-import user.Action;
-import user.CommandType;
-import user.ConsoleHelper;
-import user.UserInterface;
+package calculator;
+
+import calculator.history.DataStorage;
+import calculator.history.History;
+import calculator.history.StorageInMemory;
+import calculator.logic.parse.CalcFlatList;
+import calculator.logic.parse.ParseToList;
+import calculator.user.*;
 
 import java.util.List;
 
 /**
- * Простейший консольный калькулятор
+ * simple calculator
  * 1+2*(100-95)^2-6
  */
 
-public class Calculator {
+public class Main {
 
     public static void main(String[] args) {
         try {
+            //In Out
+            UserInOut userInOut = new ConsoleInOut();
+            UserView userView = new UserView(userInOut);
 
-            UserInterface userInterface = new UserInterface(new ConsoleHelper());
-            Action action = new Action(userInterface);
-            action.showIntro();
-            CommandType commandType = CommandType.STRING;
+            //History
+            DataStorage dataStorage = new StorageInMemory();
+            History history = new History(dataStorage);
+
+
+            Command command = new Command(userView, history);
+            CommandType commandType = CommandType.INTRO;
+            command.doCommand(commandType);
 
             while (commandType != CommandType.QUIT) {
                 try {
-                    String sInput = action.userInput("Введите данные для работы:").trim();
-                    commandType = action.detectCommandType(sInput);
+                    userView.send("Введите команду или строку для просчета:");
+                    String input = userView.get().trim();
+
+                    commandType = command.detectCommandType(input);
                     if (commandType.isCommand()) {
-                        action.doCommand(commandType);
+                        command.doCommand(commandType);
                         continue;
                     }
                     String sResult;
                     try {
-                        ParseToList parseToList = new ParseToList(sInput);
+                        ParseToList parseToList = new ParseToList(input);
                         List<String> list = parseToList.getWorkList();
-                        CalcList calcList = new CalcList(list);
-                        double result = calcList.calcFlatList();
+                        CalcFlatList calcFlatList = new CalcFlatList(list);
+                        double result = calcFlatList.calculate();
                         sResult = result + "";
-                        action.showResult(result);
+                        command.showResult(result);
+
                     } catch (NumberFormatException e) {
-                        action.showError(e.getMessage());
+                        command.showError(e.getMessage());
                         sResult = e.getMessage();
                     } catch (IllegalArgumentException e) {
-                        action.showError(e.getMessage());
+                        command.showError(e.getMessage());
                         sResult = e.getMessage();
                     } catch (NullPointerException e) {
-                        action.showError(e.getMessage());
+                        command.showError(e.getMessage());
                         sResult = e.getMessage();
                     } catch (StringIndexOutOfBoundsException e) {
-                        action.showError(e.getMessage());
+                        command.showError(e.getMessage());
                         sResult = e.getMessage();
                     } catch (ArithmeticException e) {
-                        action.showError(e.getMessage());
+                        command.showError(e.getMessage());
                         sResult = e.getMessage();
                     }
-                    action.saveHistory(sInput, sResult);
+                    command.saveHistory(input, sResult);
 
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
             }
-
 
         } catch (Exception e) {
             e.printStackTrace();

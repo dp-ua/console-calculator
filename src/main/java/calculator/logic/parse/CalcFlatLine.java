@@ -7,15 +7,31 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class CalcFlatString {
+/**
+ * Class calculate "flat" line
+ */
+public class CalcFlatLine {
 
+    /**
+     * line for work
+     */
     String input;
 
-    public CalcFlatString(String input) {
+    /**
+     * set line for work
+     * @param input "flat" line
+     */
+    public CalcFlatLine(String input) {
         this.input = input;
     }
 
 
+    /**
+     * calculate "flat" line
+     * @return String result of calculations
+     * @throws IllegalArgumentException
+     * @throws StringIndexOutOfBoundsException
+     */
     public String calculate() throws IllegalArgumentException, StringIndexOutOfBoundsException {
         double dResult;
         try {
@@ -24,7 +40,7 @@ public class CalcFlatString {
 
             while (sWork.contains(delimeter)) {
                 int iLast = sWork.lastIndexOf(delimeter);
-                sWork = sWork.substring(0, iLast) + new CalcFlatString(sWork.substring(iLast + 1)).calculate();
+                sWork = sWork.substring(0, iLast) + new CalcFlatLine(sWork.substring(iLast + 1)).calculate();
             }
 
             List<String> list = new ArrayList<String>(Arrays.asList(sWork.split(" ")));
