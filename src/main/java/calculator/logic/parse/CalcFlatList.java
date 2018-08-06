@@ -1,8 +1,8 @@
-package logic.parse;
+package calculator.logic.parse;
 
-import logic.operators.Action;
-import logic.operators.Operator;
-import logic.operators.TypeOperator;
+import calculator.logic.operators.Action;
+import calculator.logic.operators.Operator;
+import calculator.logic.operators.TypeOperator;
 
 import java.util.*;
 

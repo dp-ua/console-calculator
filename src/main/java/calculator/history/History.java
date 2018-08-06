@@ -1,4 +1,4 @@
-package history;
+package calculator.history;
 
 import java.util.HashMap;
 import java.util.List;
@@ -8,19 +8,15 @@ import java.util.Map;
  * Класс для работы с базой истории
  * <p/>
  */
-public class DataInterface {
+public class Hystory {
 
     /**
      * Хранилище данных
      */
-    private final DataStory dataStory;
+    private final DataStorage dataStorage;
 
-    /**
-     * Базовый конструктор
-     * @param dataStory место хранения данных
-     */
-    public DataInterface(DataStory dataStory) {
-        this.dataStory = dataStory;
+    public Hystory(DataStorage dataStorage) {
+        this.dataStorage = dataStorage;
     }
 
     /**
@@ -28,7 +24,7 @@ public class DataInterface {
      * @return List<String[]> список всех записей в хранилище</String[]>
      */
     public List<String[]> getListFull() {
-        return dataStory.getList();
+        return dataStorage.get();
     }
 
     /**
@@ -37,9 +33,8 @@ public class DataInterface {
      */
     public Map<String,String> getListUnique() {
         Map<String,String> map = new HashMap<String, String>();
-        for (String[] s : getListFull()             ) {
+        for (String[] s : getListFull()) {
             map.put(s[0],s[1]);
-
         }
         return map;
     }
@@ -50,8 +45,8 @@ public class DataInterface {
      * @param sB результат
      * @return успешная или не успешная запись в базу
      */
-    public boolean saveToHistory(String sA, String sB) {
-        return dataStory.add(sA,sB);
+    public boolean save(String sA, String sB) {
+        return dataStorage.put(sA,sB);
     }
 
 }

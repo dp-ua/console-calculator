@@ -1,4 +1,4 @@
-package user;
+package calculator.user;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -11,7 +11,7 @@ import java.io.InputStreamReader;
  */
 public class ConsoleHelper {
 
-    /**
+    /***
      * Вывод сообщения на консоль
      * @param sInput  строка для пользователя
      */

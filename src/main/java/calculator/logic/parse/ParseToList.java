@@ -24,7 +24,7 @@ public class ParseToList {
      * Инициализируется только в конструкторе.
      * В процессе не изменяется
      */
-    private String sInput;
+    private final String sInput;
 
     /**
      * Конструктор

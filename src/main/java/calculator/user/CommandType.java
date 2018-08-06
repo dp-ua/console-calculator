@@ -29,6 +29,7 @@ public enum CommandType {
 
     /**
      * Базовый конструктор
+     *
      * @param command команда
      * @param description  описание
      */
