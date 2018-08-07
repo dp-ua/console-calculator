@@ -9,7 +9,6 @@ public class History {
 
     /**
      * Define place where save and load History
-     *
      */
     private final AbstractStorage abstractStorage;
 
@@ -25,16 +24,16 @@ public class History {
     /**
      * Get List of all data in storage
      *
-     * @return List<String> return list of not unique String </String>
+     * @return list of not unique string in history
      */
     public List<String> getFull() {
         return abstractStorage.get();
     }
 
     /**
-     * Get List of unique String in data Storage
+     * Get List of unique String of history
      *
-     * @return List of unique entry in data storage
+     * @return list of unique entry in history
      */
     public List<String> getUnique() {
         Set<String> set = new HashSet<String>(abstractStorage.get());
@@ -42,7 +41,7 @@ public class History {
     }
 
     /**
-     * Put string to storage
+     * Put string to history
      *
      * @param input string to save
      * @return true if result is successful

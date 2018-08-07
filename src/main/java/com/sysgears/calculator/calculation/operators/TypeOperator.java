@@ -1,4 +1,4 @@
-package com.sysgears.calculator.calculations.operators;
+package com.sysgears.calculator.calculation.operators;
 
 import java.util.List;
 
@@ -10,7 +10,7 @@ import static java.util.Arrays.asList;
 public enum TypeOperator {
 
     /**
-     * List of opertarors
+     * List of opertarors. Format: operator, priority, description
      */
     PLUS(asList("+"), (byte) 1, "сложение"),
     MINUS(asList("-"), (byte) 1, "вычитание"),
@@ -26,23 +26,22 @@ public enum TypeOperator {
 
 
     /**
-     * enumeration of operator symbols
+     * Symbols of operator
      */
-    private List<String> operator;
+    private final List<String> operator;
 
     /**
-     * priority of Operators
+     * Priority of operator
      */
     private final byte priority;
 
     /**
-     * Descriptions of all opertators
-     * used to generate help
+     * Description of all operator
      */
-    private String description;
+    private final String description;
 
     /**
-     * set all basic params of Enum
+     * Set basic params for Enum
      *
      * @param operator    list of operators
      * @param priority    priority of operator
@@ -54,7 +53,15 @@ public enum TypeOperator {
         this.description = description;
     }
 
-    public double calculate(double firstOperand, double secondOperand) throws IllegalArgumentException {
+    /**
+     * Produce needed operations with two operands
+     *
+     * @param firstOperand - first operand in operations
+     * @param secondOperand - second operand in operations
+     * @return double result of operations
+     * @throws IllegalArgumentException if take non specified result or an error in the calculation
+     */
+    public double produce(double firstOperand, double secondOperand) throws IllegalArgumentException {
         switch (this) {
             case PLUS:
                 return firstOperand + secondOperand;
@@ -80,16 +87,16 @@ public enum TypeOperator {
 
 
     /**
-     * get Description
+     * get Description of operator
      *
-     * @return description
+     * @return description of operator
      */
     public String getDescription() {
         return description;
     }
 
     /**
-     * Get list of operators
+     * Get String list of operators of selected type
      *
      * @return List<String> all supported operators</>
      */
@@ -98,9 +105,9 @@ public enum TypeOperator {
     }
 
     /**
-     * get priority of operator
+     * Get priority of operator
      *
-     * @return
+     * @return byte priority of selected operator
      */
     public byte getPriority() {
         return priority;

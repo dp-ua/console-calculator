@@ -1,28 +1,31 @@
-package com.sysgears.calculator.calculations.operators;
+package com.sysgears.calculator.calculation.operators;
 
 import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Class work with operators list. Used for generate Help
+ * Get list of operators by need priority
  */
 public class ListOperators {
+
     /**
-     * Priority
+     * Needed priority
      */
     private final byte priority;
 
     /**
-     * set priority
-     * @param priority of operator
+     * Set priority
+     *
+     * @param priority of operators
      */
     public ListOperators(byte priority) {
         this.priority = priority;
     }
 
     /**
-     * returns a list of operators with the specified priority
-     * @return Map<>operator + description</>
+     * Get Map of operators with the specified priority
+     *
+     * @return Map<String,String>key - operator. value - description </String>
      */
     public Map<String, String> getOperators() {
         Map<String, String> map = new HashMap<String, String>();

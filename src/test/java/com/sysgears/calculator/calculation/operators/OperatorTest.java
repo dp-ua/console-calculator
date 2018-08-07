@@ -1,4 +1,4 @@
-package com.sysgears.calculator.calculations.operators;
+package com.sysgears.calculator.calculation.operators;
 
 import org.junit.Assert;
 import org.junit.Test;

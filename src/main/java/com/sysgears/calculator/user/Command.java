@@ -1,11 +1,14 @@
 package com.sysgears.calculator.user;
 
 /**
- * class implements all commands of project
+ * Detect the type of user input
  */
 public class Command {
 
-    String input;
+    /**
+     *
+     */
+    private final String input;
 
     /**
      * Set input String

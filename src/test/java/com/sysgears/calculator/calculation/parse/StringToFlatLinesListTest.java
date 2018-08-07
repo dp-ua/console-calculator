@@ -1,6 +1,6 @@
-package com.sysgears.calculator.calculations.parse;
+package com.sysgears.calculator.calculation.parse;
 
-import com.sysgears.calculator.calculations.operators.TypeOperator;
+import com.sysgears.calculator.calculation.operators.TypeOperator;
 import org.junit.Assert;
 import org.junit.Test;
 

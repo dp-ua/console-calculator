@@ -1,14 +1,14 @@
-package com.sysgears.calculator.calculations.parse;
+package com.sysgears.calculator.calculation.parse;
 
-import com.sysgears.calculator.calculations.operators.Operator;
-import com.sysgears.calculator.calculations.operators.TypeOperator;
+import com.sysgears.calculator.calculation.operators.Operator;
+import com.sysgears.calculator.calculation.operators.TypeOperator;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 /**
- * Class calculate "flat" line
+ * Produce the calculations with "flat" line
  */
 public class FlatLineToDouble {
 
@@ -18,7 +18,8 @@ public class FlatLineToDouble {
     private final String input;
 
     /**
-     * set line for work
+     * Set line for work
+     *
      * @param input "flat" line
      */
     public FlatLineToDouble(String input) {
@@ -27,23 +28,24 @@ public class FlatLineToDouble {
 
 
     /**
-     * calculate "flat" line
-     * @return String result of calculations
-     * @throws IllegalArgumentException wrong arguments
+     * Produce "flat" line
+     *
+     * @return double result of calculation
+     * @throws IllegalArgumentException take when wrong arguments
      * @throws StringIndexOutOfBoundsException wrong string
      */
     public double calculate() throws IllegalArgumentException, StringIndexOutOfBoundsException {
-        double dResult;
+        double result;
         try {
-            String sWork = input;
+            String flatString = input;
             String delimeter = TypeOperator.DELIMETER.getOperator().get(0);
 
-            while (sWork.contains(delimeter)) {
-                int iLast = sWork.lastIndexOf(delimeter);
-                sWork = sWork.substring(0, iLast) + new FlatLineToDouble(sWork.substring(iLast + 1)).calculate();
+            while (flatString.contains(delimeter)) {
+                int iLast = flatString.lastIndexOf(delimeter);
+                flatString = flatString.substring(0, iLast) + new FlatLineToDouble(flatString.substring(iLast + 1)).calculate();
             }
 
-            List<String> list = new ArrayList<String>(Arrays.asList(sWork.split(" ")));
+            List<String> list = new ArrayList<String>(Arrays.asList(flatString.split(" ")));
 
             int now = 1;
             while (list.size() > 3) {
@@ -60,7 +62,7 @@ public class FlatLineToDouble {
                 double firstOperand = Double.parseDouble(list.get(now - 1));
                 double secondOperand = Double.parseDouble(list.get(now + 1));
 
-                list.set(now - 1, operator.calculate(firstOperand, secondOperand) + "");
+                list.set(now - 1, operator.produce(firstOperand, secondOperand) + "");
                 list.remove(now + 1);
                 list.remove(now);
                 now -= 2;
@@ -70,9 +72,9 @@ public class FlatLineToDouble {
                 Operator operator = new Operator(list.get(1).charAt(0));
                 double firstOperand = Double.parseDouble(list.get(0));
                 double secondOperand = Double.parseDouble(list.get(2));
-                dResult = operator.calculate(firstOperand, secondOperand);
+                result = operator.produce(firstOperand, secondOperand);
             } else if (list.size() == 1)
-                dResult = Double.parseDouble(list.get(0));
+                result = Double.parseDouble(list.get(0));
             else throw new IllegalArgumentException("");
 
         } catch (NumberFormatException e) {
@@ -83,7 +85,7 @@ public class FlatLineToDouble {
             throw new StringIndexOutOfBoundsException("Деление на ноль");
         }
 
-        return dResult;
+        return result;
     }
 
 

@@ -4,7 +4,9 @@ import java.io.IOException;
 
 
 /**
- * class to communicate with the user
+ * User interface.
+ *
+ * Sends data to the user and receives responses from him
  */
 public class UserView {
 
@@ -14,25 +16,28 @@ public class UserView {
     private final UserInOut userInOut;
 
     /**
-     * set the basic interface
-     * @param userInOut
+     * Set the basic interface
+     *
+     * @param userInOut user interface
      */
     public UserView(UserInOut userInOut) {
         this.userInOut = userInOut;
     }
 
     /**
-     * send message to user
-     * @param message
+     * Send message to user
+     *
+     * @param message String
      */
     public void send(String message) {
         userInOut.write(message);
     }
 
     /**
-     * get message from user
-     * @return String
-     * @throws IOException
+     * Get message from user
+     *
+     * @return String of user input
+     * @throws IOException when take some errors while input data
      */
     public String get() throws IOException {
         return userInOut.read();

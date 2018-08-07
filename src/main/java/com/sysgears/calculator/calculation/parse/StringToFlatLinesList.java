@@ -1,51 +1,55 @@
-package com.sysgears.calculator.calculations.parse;
+package com.sysgears.calculator.calculation.parse;
 
-import com.sysgears.calculator.calculations.operators.Operator;
-import com.sysgears.calculator.calculations.operators.TypeOperator;
+import com.sysgears.calculator.calculation.operators.Operator;
+import com.sysgears.calculator.calculation.operators.TypeOperator;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
 
+/**
+ * Take the string and parse it to List of operands, operators and "flat" strings without brackets
+ */
 public class StringToFlatLinesList {
 
     /**
-     * string for work
+     * String for work
      */
-    private final String sInput;
+    private final String input;
 
     /**
-     * set input string
-     * @param sInput
+     * Set input string
+     *
+     * @param input string fo parse
      */
-    public StringToFlatLinesList(String sInput) {
-        this.sInput = sInput;
+    public StringToFlatLinesList(String input) {
+        this.input = input;
     }
 
     /**
-     * parse main string to list of "flat" lines
-     * "Flat" string - string without brackets
-     * @return list of "flat" lines
+     * Parse main string to list of "flat" lines
+     *
+     * "Flat" string - string without brackets.
+     * @return List of "flat" lines
      * @throws IllegalArgumentException if there were errors during the parsing of the line
-     * @throws NullPointerException if take blank string
      */
     public List<String> parse() throws IllegalArgumentException {
         List<String> list = new ArrayList<String>();
 
-        if ("".equals(sInput.trim())) throw new IllegalArgumentException("Введена пустая строка");
+        if ("".equals(input.trim())) throw new IllegalArgumentException("Введена пустая строка");
 
         String defOperator = TypeOperator.DEF.getOperator().get(0);
         String openBr = TypeOperator.OPENBRACKETS.getOperator().get(0);
         String delimeter = TypeOperator.DELIMETER.getOperator().get(0);
         String minus = TypeOperator.MINUS.getOperator().get(0);
 
-        if (sInput.contains(delimeter)) throw new IllegalArgumentException("В строке введен служебный символ "+delimeter);
+        if (input.contains(delimeter)) throw new IllegalArgumentException("В строке введен служебный символ "+delimeter);
 
         String pile = "";
         Stack<String> stack = new Stack<String>();
 
-        for (char c : sInput.toCharArray()) {
+        for (char c : input.toCharArray()) {
             Operator operator = new Operator(c);
             if (c == minus.charAt(0) & "".equals(pile)) {
                 pile += minus;

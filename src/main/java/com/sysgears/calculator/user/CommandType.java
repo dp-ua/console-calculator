@@ -1,10 +1,13 @@
 package com.sysgears.calculator.user;
 
 /**
- * Type of commands
+ * Type of supported commands
  */
 public enum CommandType {
 
+    /**
+     * Types of command
+     */
     INTRO("intro", "Вызов приветствия"),
     STRING("", "вычисляемая строка"),
     HISTORY("history", "полная история операций"),
@@ -13,20 +16,20 @@ public enum CommandType {
     QUIT("quit", "Выход из программы");
 
     /**
-     * command
+     * How to call the command
      */
     private final String command;
 
     /**
-     * description of command
+     * Description of command
      */
     private final String description;
 
     /**
-     * set command and description
+     * Set command and description
      *
-     * @param command     string
-     * @param description string
+     * @param command  mnemonic string of Command
+     * @param description string description of command
      */
     CommandType(String command, String description) {
         this.command = command;
@@ -34,7 +37,7 @@ public enum CommandType {
     }
 
     /**
-     * Return command
+     * Return mnemonic string of command
      *
      * @return String how to call a command
      */

@@ -6,6 +6,7 @@ import java.util.List;
  * Global interface for work with Data Storage
  */
 public interface AbstractStorage {
+
     /**
      * Put new data to storage
      *

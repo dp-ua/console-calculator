@@ -7,6 +7,7 @@ import java.util.List;
  * Realisations of AbstractStorage interface. Save and load data only to memory
  */
 public class StorageInMemory implements AbstractStorage {
+
     /**
      * List of All data
      */
@@ -23,7 +24,8 @@ public class StorageInMemory implements AbstractStorage {
     }
 
     /**
-     * get all data in List
+     * Get all data in List
+     *
      * @return all not unique data in List
      */
     public List<String> get() {

@@ -8,14 +8,14 @@ import java.io.IOException;
 public interface UserInOut {
     /**
      * write message to User
-     * @param sInput
+     * @param message string to user
      */
-    void write(String sInput);
+    void write(String message);
 
     /**
      * get message from User
-     * @return
-     * @throws IOException
+     * @return string message from user
+     * @throws IOException errors received during data entry
      */
     String read() throws IOException;
 }

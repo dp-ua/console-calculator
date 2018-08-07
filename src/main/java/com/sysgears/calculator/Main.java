@@ -1,6 +1,6 @@
 package com.sysgears.calculator;
 
-import com.sysgears.calculator.calculations.Calculate;
+import com.sysgears.calculator.calculation.Calculate;
 import com.sysgears.calculator.history.AbstractStorage;
 import com.sysgears.calculator.history.History;
 import com.sysgears.calculator.history.StorageInMemory;
@@ -39,14 +39,9 @@ public class Main {
                     }
 
                     if (commandType != STRING) {
-                        // TODO: 07.08.18 Реализацию команд
                         switch (commandType) {
-                            case QUIT:
-                                break;
                             case INTRO:
                                 messages.intro();
-                                break;
-                            case STRING:
                                 break;
                             case HISTORY:
                                 messages.showList(history.getFull());
@@ -58,7 +53,6 @@ public class Main {
                                 messages.help();
                                 break;
                         }
-                        continue;
                     } else {
                         history.save(input);
                         double result = new Calculate(input).calculate();
