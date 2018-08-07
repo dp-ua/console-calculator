@@ -1,4 +1,4 @@
-package calculator.logic.operators;
+package com.sysgears.calculator.calculations.operators;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -10,7 +10,7 @@ public class ListOperators {
     /**
      * Priority
      */
-    byte priority;
+    private final byte priority;
 
     /**
      * set priority

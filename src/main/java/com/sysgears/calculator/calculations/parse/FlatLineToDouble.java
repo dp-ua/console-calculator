@@ -1,7 +1,7 @@
-package calculator.logic.parse;
+package com.sysgears.calculator.calculations.parse;
 
-import calculator.logic.operators.Operator;
-import calculator.logic.operators.TypeOperator;
+import com.sysgears.calculator.calculations.operators.Operator;
+import com.sysgears.calculator.calculations.operators.TypeOperator;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -10,18 +10,18 @@ import java.util.List;
 /**
  * Class calculate "flat" line
  */
-public class CalcFlatLine {
+public class FlatLineToDouble {
 
     /**
      * line for work
      */
-    String input;
+    private final String input;
 
     /**
      * set line for work
      * @param input "flat" line
      */
-    public CalcFlatLine(String input) {
+    public FlatLineToDouble(String input) {
         this.input = input;
     }
 
@@ -29,10 +29,10 @@ public class CalcFlatLine {
     /**
      * calculate "flat" line
      * @return String result of calculations
-     * @throws IllegalArgumentException
-     * @throws StringIndexOutOfBoundsException
+     * @throws IllegalArgumentException wrong arguments
+     * @throws StringIndexOutOfBoundsException wrong string
      */
-    public String calculate() throws IllegalArgumentException, StringIndexOutOfBoundsException {
+    public double calculate() throws IllegalArgumentException, StringIndexOutOfBoundsException {
         double dResult;
         try {
             String sWork = input;
@@ -40,7 +40,7 @@ public class CalcFlatLine {
 
             while (sWork.contains(delimeter)) {
                 int iLast = sWork.lastIndexOf(delimeter);
-                sWork = sWork.substring(0, iLast) + new CalcFlatLine(sWork.substring(iLast + 1)).calculate();
+                sWork = sWork.substring(0, iLast) + new FlatLineToDouble(sWork.substring(iLast + 1)).calculate();
             }
 
             List<String> list = new ArrayList<String>(Arrays.asList(sWork.split(" ")));
@@ -49,18 +49,18 @@ public class CalcFlatLine {
             while (list.size() > 3) {
                 Operator operator = new Operator(list.get(now).charAt(0));
                 if ((now + 2) < (list.size())) {
-                    Operator opB = new Operator(list.get(now + 2).charAt(0));
+                    Operator nextOperator = new Operator(list.get(now + 2).charAt(0));
 
-                    if (operator.getTypeOperator().getPriority() < opB.getTypeOperator().getPriority()) {
+                    if (operator.getTypeOperator().getPriority() < nextOperator.getTypeOperator().getPriority()) {
                         now += 2;
                         continue;
                     }
                 }
 
-                double dA = Double.parseDouble(list.get(now - 1));
-                double dB = Double.parseDouble(list.get(now + 1));
+                double firstOperand = Double.parseDouble(list.get(now - 1));
+                double secondOperand = Double.parseDouble(list.get(now + 1));
 
-                list.set(now - 1, operator.calculate(dA, dB) + "");
+                list.set(now - 1, operator.calculate(firstOperand, secondOperand) + "");
                 list.remove(now + 1);
                 list.remove(now);
                 now -= 2;
@@ -68,9 +68,9 @@ public class CalcFlatLine {
 
             if (list.size() == 3) {
                 Operator operator = new Operator(list.get(1).charAt(0));
-                double dA = Double.parseDouble(list.get(0));
-                double dB = Double.parseDouble(list.get(2));
-                dResult = operator.calculate(dA, dB);
+                double firstOperand = Double.parseDouble(list.get(0));
+                double secondOperand = Double.parseDouble(list.get(2));
+                dResult = operator.calculate(firstOperand, secondOperand);
             } else if (list.size() == 1)
                 dResult = Double.parseDouble(list.get(0));
             else throw new IllegalArgumentException("");
@@ -83,7 +83,7 @@ public class CalcFlatLine {
             throw new StringIndexOutOfBoundsException("Деление на ноль");
         }
 
-        return String.format("%.2f", dResult);
+        return dResult;
     }
 
 

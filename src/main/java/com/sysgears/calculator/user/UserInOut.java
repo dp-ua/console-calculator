@@ -1,4 +1,4 @@
-package calculator.user;
+package com.sysgears.calculator.user;
 
 import java.io.IOException;
 

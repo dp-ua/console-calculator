@@ -1,16 +1,14 @@
-package calculator.logic.parse;
+package com.sysgears.calculator.calculations.parse;
 
-import calculator.logic.operators.Operator;
-import calculator.logic.operators.TypeOperator;
+import com.sysgears.calculator.calculations.operators.Operator;
+import com.sysgears.calculator.calculations.operators.TypeOperator;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
-/**
- * class for work with input string
- */
-public class ParseToList {
+
+public class StringToFlatLinesList {
 
     /**
      * string for work
@@ -21,7 +19,7 @@ public class ParseToList {
      * set input string
      * @param sInput
      */
-    public ParseToList(String sInput) {
+    public StringToFlatLinesList(String sInput) {
         this.sInput = sInput;
     }
 
@@ -32,59 +30,59 @@ public class ParseToList {
      * @throws IllegalArgumentException if there were errors during the parsing of the line
      * @throws NullPointerException if take blank string
      */
-    public List<String> getWorkList() throws IllegalArgumentException, NullPointerException {
+    public List<String> parse() throws IllegalArgumentException {
         List<String> list = new ArrayList<String>();
 
-        if ("".equals(sInput.trim())) throw new NullPointerException("Введена пустая строка");
+        if ("".equals(sInput.trim())) throw new IllegalArgumentException("Введена пустая строка");
 
         String defOperator = TypeOperator.DEF.getOperator().get(0);
         String openBr = TypeOperator.OPENBRACKETS.getOperator().get(0);
-
         String delimeter = TypeOperator.DELIMETER.getOperator().get(0);
+        String minus = TypeOperator.MINUS.getOperator().get(0);
+
         if (sInput.contains(delimeter)) throw new IllegalArgumentException("В строке введен служебный символ "+delimeter);
 
-
-        String sTmp = "";
+        String pile = "";
         Stack<String> stack = new Stack<String>();
 
         for (char c : sInput.toCharArray()) {
             Operator operator = new Operator(c);
-            if (c == '-' & "".equals(sTmp)) {
-                sTmp += "-";
+            if (c == minus.charAt(0) & "".equals(pile)) {
+                pile += minus;
             } else if (operator.getTypeOperator()==TypeOperator.OPENBRACKETS) {
-                if (sTmp.trim().length() > 0) {
-                    stack.push(sTmp.trim());
+                if (pile.trim().length() > 0) {
+                    stack.push(pile.trim());
                     stack.push(defOperator);
                 }
                 stack.push(openBr);
-                sTmp = "";
+                pile = "";
             } else if (operator.getTypeOperator()==TypeOperator.CLOSEBRACKETS) {
-                stack.push(sTmp);
-                sTmp = "";
+                stack.push(pile);
+                pile = "";
                 while (!stack.empty()) {
                     if (!openBr.equals(stack.peek())) {
-                        sTmp = " " + stack.pop() + sTmp;
+                        pile = " " + stack.pop() + pile;
                     } else {
                         stack.pop();
-                        stack.push(delimeter + sTmp.trim());
-                        sTmp = "";
+                        stack.push(delimeter + pile.trim());
+                        pile = "";
                         break;
                     }
                 }
                 if (stack.empty())
                     throw new IllegalArgumentException("Ошибка разбора скобок. Проверьте правильность выражения");
             } else if (operator.isOperator()) {
-                stack.push(sTmp.trim());
+                stack.push(pile.trim());
                 stack.push(c + "");
-                sTmp = "";
+                pile = "";
             } else {
                 if (stack.size() > 0)
                     if (stack.peek().charAt(0) == delimeter.charAt(0)) stack.push(defOperator);
-                sTmp += c;
+                pile += c;
             }
         }
 
-        if (sTmp.length() > 0) stack.push(sTmp);
+        if (pile.length() > 0) stack.push(pile);
         while (!stack.empty())
 
         {

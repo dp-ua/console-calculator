@@ -1,4 +1,4 @@
-package calculator.user;
+package com.sysgears.calculator.user;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -15,7 +15,6 @@ public class ConsoleInOut implements UserInOut {
      */
     public void write(String message) {
         System.out.println(message);
-
     }
 
     /**

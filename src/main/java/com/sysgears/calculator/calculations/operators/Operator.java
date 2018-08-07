@@ -1,6 +1,6 @@
-package calculator.logic.operators;
+package com.sysgears.calculator.calculations.operators;
 
-import static calculator.logic.operators.TypeOperator.*;
+import static com.sysgears.calculator.calculations.operators.TypeOperator.*;
 
 /**
  * class for work with basic operators
@@ -10,7 +10,7 @@ public class Operator {
     /**
      * Type of operator
      */
-    TypeOperator typeOperator;
+    private final TypeOperator typeOperator;
 
     /**
      * set the basic operator
@@ -58,32 +58,14 @@ public class Operator {
 
     /**
      * Make the necessary actions on the specified operands
-     * @param dA first operand
-     * @param dB second operand
+     * @param firstOperand first operand
+     * @param secondOperand second operand
      * @return result of operations
      * @throws IllegalArgumentException if take non specified result
      */
-    public double calculate(double dA, double dB) throws IllegalArgumentException {
-        switch (typeOperator) {
-            case PLUS:
-                return dA + dB;
-            case MINUS:
-                return dA - dB;
-            case MULT:
-                return dA * dB;
-            case DIV:
-                double r = dA / dB;
-                if (Double.isInfinite(r)) throw new ArithmeticException("Деление на ноль");
-                if (Double.isNaN(r)) throw new ArithmeticException("Результат деления: NaN");
-                return r;
-            case PERCENT:
-                return (dA / 100) * dB;
-            case POW:
-                return Math.pow(dA, dB);
-            case NON:
-            default:
-                throw new IllegalArgumentException("Неверный тип оператора");
-        }
+    public double calculate(double firstOperand, double secondOperand) throws IllegalArgumentException {
+        return typeOperator.calculate(firstOperand, secondOperand);
     }
+
 
 }

@@ -1,4 +1,4 @@
-package calculator.user;
+package com.sysgears.calculator.user;
 
 /**
  * Type of commands
@@ -24,8 +24,9 @@ public enum CommandType {
 
     /**
      * set command and description
-     * @param command string
-     * @param description  string
+     *
+     * @param command     string
+     * @param description string
      */
     CommandType(String command, String description) {
         this.command = command;
@@ -33,31 +34,21 @@ public enum CommandType {
     }
 
     /**
-     * return command
-     * @return String
+     * Return command
+     *
+     * @return String how to call a command
      */
     public String getCommand() {
         return command;
     }
 
     /**
-     * return description of command
-     * @return String
+     * Return description of command
+     *
+     * @return String description of command
      */
     public String getDescription() {
         return description;
     }
 
-    /**
-     * type is a command or not
-     * @return if Type is STRING - return false. Other - return true
-     */
-    public boolean isCommand() {
-        switch (this) {
-            case STRING:
-                return false;
-            default:
-                return true;
-        }
-    }
 }
