@@ -11,7 +11,7 @@ public class StorageInMemory implements AbstractStorage {
     /**
      * List of All data
      */
-    private final List<String> list = new ArrayList<String>();
+    private final List<String> list = new ArrayList<>();
 
     /**
      * Put string to list
@@ -28,7 +28,7 @@ public class StorageInMemory implements AbstractStorage {
      *
      * @return all not unique data in List
      */
-    public List<String> get() {
+    public List<String> getAll() {
         return list;
     }
 }

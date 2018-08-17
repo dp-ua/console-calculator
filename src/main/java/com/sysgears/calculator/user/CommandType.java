@@ -8,12 +8,13 @@ public enum CommandType {
     /**
      * Types of command
      */
-    INTRO("intro", "Вызов приветствия"),
+    INTRO("intro", "вызов приветствия"),
     STRING("", "вычисляемая строка"),
     HISTORY("history", "полная история операций"),
     HISTORYU("history unique", "история операций. Только уникальные строки"),
     HELP("help", "Вызов помощи"),
     QUIT("quit", "Выход из программы");
+
 
     /**
      * How to call the command

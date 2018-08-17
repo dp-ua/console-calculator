@@ -11,7 +11,7 @@ public interface AbstractStorage {
      * Put new data to storage
      *
      * @param s string to save
-     * @return true if the result is successful
+     * @return true if the showResult is successful
      */
     boolean put(String s);
 
@@ -20,5 +20,5 @@ public interface AbstractStorage {
      *
      * @return list of saved data
      */
-    List<String> get();
+    List<String> getAll();
 }

@@ -26,8 +26,8 @@ public class History {
      *
      * @return list of not unique string in history
      */
-    public List<String> getFull() {
-        return abstractStorage.get();
+    public List<String> getListFull() {
+        return abstractStorage.getAll();
     }
 
     /**
@@ -35,16 +35,16 @@ public class History {
      *
      * @return list of unique entry in history
      */
-    public List<String> getUnique() {
-        Set<String> set = new HashSet<String>(abstractStorage.get());
-        return new ArrayList<String>(set);
+    public List<String> getListUnique() {
+        Set<String> set = new HashSet<>(abstractStorage.getAll());
+        return new ArrayList<>(set);
     }
 
     /**
      * Put string to history
      *
      * @param input string to save
-     * @return true if result is successful
+     * @return true if showResult is successful
      */
     public boolean save(String input) {
         return abstractStorage.put(input);

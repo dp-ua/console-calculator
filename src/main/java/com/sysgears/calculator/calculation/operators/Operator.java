@@ -1,5 +1,7 @@
 package com.sysgears.calculator.calculation.operators;
 
+import com.sysgears.calculator.calculation.parse.exception.MyException;
+
 import static com.sysgears.calculator.calculation.operators.TypeOperator.*;
 
 /**
@@ -49,14 +51,7 @@ public class Operator {
      * @return returns true if the operator is specified
      */
     public boolean isOperator() {
-        switch (typeOperator) {
-            case NON:
-            case OPENBRACKETS:
-            case CLOSEBRACKETS:
-            case DELIMETER:
-                return false;
-        }
-        return true;
+        return typeOperator.isOperator();
 
     }
 
@@ -65,10 +60,10 @@ public class Operator {
      *
      * @param firstOperand  first operand
      * @param secondOperand second operand
-     * @return double result of operations
-     * @throws IllegalArgumentException if take non specified result or an error in the calculation
+     * @return double showResult of operations
+     * @throws IllegalArgumentException if take non specified showResult or an showError in the calculation
      */
-    public double produce(double firstOperand, double secondOperand) throws IllegalArgumentException {
+    public double produce(double firstOperand, double secondOperand) throws MyException {
         return typeOperator.produce(firstOperand, secondOperand);
     }
 }

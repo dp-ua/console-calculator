@@ -1,13 +1,11 @@
 package com.sysgears.calculator;
 
-import com.sysgears.calculator.calculation.Calculate;
+import com.sysgears.calculator.calculation.parse.MainParser;
+import com.sysgears.calculator.calculation.parse.exception.MyException;
 import com.sysgears.calculator.history.AbstractStorage;
 import com.sysgears.calculator.history.History;
 import com.sysgears.calculator.history.StorageInMemory;
 import com.sysgears.calculator.user.*;
-
-
-import static com.sysgears.calculator.user.CommandType.STRING;
 
 /**
  * simple com.sysgears.calculator
@@ -21,60 +19,56 @@ public class Main {
             UserInOut userInOut = new ConsoleInOut();
             UserView userView = new UserView(userInOut);
             Messages messages = new Messages(userView);
-            messages.intro();
+            messages.showIntro();
 
             AbstractStorage abstractStorage = new StorageInMemory();
             History history = new History(abstractStorage);
+            Command command = new Command();
 
             while (true) {
+                String input="";
                 try {
+
                     messages.waitForInput();
-                    String input = userView.get().trim();
+                    input = userView.get().trim();
 
-
-                    CommandType commandType = new Command(input).detectCommandType();
+                    CommandType commandType = command.detectCommandType(input);
                     if (commandType == CommandType.QUIT) {
-                        messages.quit();
+                        messages.showQuit();
                         break;
                     }
 
-                    if (commandType != STRING) {
-                        switch (commandType) {
-                            case INTRO:
-                                messages.intro();
-                                break;
-                            case HISTORY:
-                                messages.showList(history.getFull());
-                                break;
-                            case HISTORYU:
-                                messages.showList(history.getUnique());
-                                break;
-                            case HELP:
-                                messages.help();
-                                break;
-                        }
-                    } else {
-                        history.save(input);
-                        double result = new Calculate(input).calculate();
-                        messages.result(result);
 
+
+                    switch (commandType) {
+                        case INTRO:
+                            messages.showIntro();
+                            break;
+                        case HISTORY:
+                            messages.showList(history.getListFull());
+                            break;
+                        case HISTORYU:
+                            messages.showList(history.getListUnique());
+                            break;
+                        case HELP:
+                            messages.showHelp();
+                            break;
+                        default:
+                            double result = new MainParser().calculate(input);
+                            history.save(input+" Результат: " + result);
+                            messages.showResult(result);
                     }
 
-                } catch (NumberFormatException e) {
-                    messages.error(e.getMessage());
-                } catch (IllegalArgumentException e) {
-                    messages.error(e.getMessage());
-                } catch (StringIndexOutOfBoundsException e) {
-                    messages.error(e.getMessage());
-                } catch (ArithmeticException e) {
-                    messages.error(e.getMessage());
+
+                } catch (MyException e) {
+                    history.save(input+" Результат: " + e.getMessage());
+                    messages.showError(e.getMessage());
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
+
             }
 
-        } catch (Exception e) {
-            e.printStackTrace();
         } catch (Throwable throwable) {
             throwable.printStackTrace();
         }

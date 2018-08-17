@@ -1,7 +1,7 @@
 package com.sysgears.calculator.user;
 
-import com.sysgears.calculator.calculation.Calculate;
 import com.sysgears.calculator.calculation.operators.ListOperators;
+import com.sysgears.calculator.calculation.operators.TypeOperator;
 
 import java.util.List;
 import java.util.Map;
@@ -27,9 +27,9 @@ public class Messages {
     }
 
     /**
-     * Show information about quit
+     * Show information about showQuit
      */
-    public void quit() {
+    public void showQuit() {
         userView.send("Выход");
     }
 
@@ -43,17 +43,16 @@ public class Messages {
     /**
      * Show welcome message
      */
-    public void intro() {
+    public void showIntro() {
         userView.send("Для вызова справки введите " + CommandType.HELP.getCommand());
-        userView.send("Введите строку для расчета или команду.");
     }
 
     /**
-     * Show error message
+     * Show showError message
      *
      * @param errorMessage text of Error
      */
-    public void error(String errorMessage) {
+    public void showError(String errorMessage) {
         userView.send("::Ошибка:: " + errorMessage);
     }
 
@@ -66,29 +65,25 @@ public class Messages {
      */
     public void showList(List<String> list) {
         if (list.size() == 0) return;
-        for (String s : list) {
-            try {
-                userView.send(s + " = " + new Calculate(s).calculate());
-            } catch (Exception e) {
-                userView.send(s + " = " + e.getMessage());
-            }
-        }
+        for (String s : list) userView.send(s);
     }
 
     /**
-     * Show sting with result of operation
+     * Show sting with showResult of operation
      *
      * @param result of operation
      */
-    public void result(double result) {
+    public String showResult(double result) {
         String s = String.format("::Результат: %.2f", result);
         userView.send(s);
+        return s;
+
     }
 
     /**
-     * Show help to user about all operators and commands
+     * Show showHelp to user about all operators and commands
      */
-    public void help() {
+    public void showHelp() {
         userView.send("Консольный калькулятор");
         userView.send("Вычисляет значение введеной строки");
         userView.send("Входные данные могут быть: ");
@@ -99,17 +94,18 @@ public class Messages {
         }
         userView.send("Поддерживаются целые числа, операторы и приоритетные разделители(скобки)");
         userView.send("Список операторов:");
+        ListOperators listOperators = new ListOperators();
         for (int i = 1; i < 6; i++) {
             userView.send("  -приоритет [" + i + "]: ");
-            for (Map.Entry<String, String> pair : new ListOperators((byte) i).getOperators().entrySet())
+            for (Map.Entry<String, String> pair : listOperators.getOperators((byte) i).entrySet())
                 userView.send("    " + pair.getKey() + " " + pair.getValue());
         }
         userView.send("  -разделители: ");
-        for (Map.Entry<String, String> pair : new ListOperators((byte) 8).getOperators().entrySet())
+        for (Map.Entry<String, String> pair : listOperators.getOperators((byte) 8).entrySet())
             userView.send("    " + pair.getKey() + " " + pair.getValue());
-        userView.send("  -системные символы: ");
-        for (Map.Entry<String, String> pair : new ListOperators((byte) 9).getOperators().entrySet())
-            userView.send("    " + pair.getKey() + " " + pair.getValue());
+        userView.send("  -если перед или после разделителя вы не укажите оператор - он будет заменен на: ");
+        userView.send("    " + TypeOperator.DEF.getOperator().get(0) + " " + TypeOperator.DEF.getDescription());
+        userView.send("    пример: 2(5-2) воспринимается как 2" + TypeOperator.DEF.getOperator().get(0) + "(5-2)");
         userView.send("==============================================================================");
     }
 }

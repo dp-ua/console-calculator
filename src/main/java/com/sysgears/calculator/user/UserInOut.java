@@ -13,7 +13,7 @@ public interface UserInOut {
     void write(String message);
 
     /**
-     * get message from User
+     * getAll message from User
      * @return string message from user
      * @throws IOException errors received during data entry
      */
