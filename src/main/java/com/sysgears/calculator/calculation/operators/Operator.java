@@ -1,8 +1,8 @@
 package com.sysgears.calculator.calculation.operators;
 
-import com.sysgears.calculator.calculation.parse.exception.MyException;
+import com.sysgears.calculator.calculation.parse.exception.CallculationExceptions;
 
-import static com.sysgears.calculator.calculation.operators.TypeOperator.*;
+import static com.sysgears.calculator.calculation.operators.OperatorTypes.*;
 
 /**
  * Parse and detect basics operators, which are indicated in the Enum TypeOperators
@@ -12,7 +12,7 @@ public class Operator {
     /**
      * Type of operator
      */
-    private final TypeOperator typeOperator;
+    private final OperatorTypes operatorTypes;
 
     /**
      * Set the operator
@@ -20,7 +20,7 @@ public class Operator {
      * @param c symbol of working operator
      */
     public Operator(char c) {
-        typeOperator = getTypeByChar(c);
+        operatorTypes = getTypeByChar(c);
     }
 
     /**
@@ -29,8 +29,8 @@ public class Operator {
      * @param c character of operator
      * @return type of operator
      */
-    private TypeOperator getTypeByChar(char c) {
-        for (TypeOperator t : values())
+    private OperatorTypes getTypeByChar(char c) {
+        for (OperatorTypes t : values())
             for (String s : t.getOperator())
                 if (c == s.charAt(0)) return t;
         return NON;
@@ -39,10 +39,10 @@ public class Operator {
     /**
      * Get Type of Operator
      *
-     * @return TypeOperator
+     * @return OperatorTypes
      */
-    public TypeOperator getTypeOperator() {
-        return typeOperator;
+    public OperatorTypes getOperatorTypes() {
+        return operatorTypes;
     }
 
     /**
@@ -51,7 +51,7 @@ public class Operator {
      * @return returns true if the operator is specified
      */
     public boolean isOperator() {
-        return typeOperator.isOperator();
+        return operatorTypes.isOperator();
 
     }
 
@@ -63,7 +63,7 @@ public class Operator {
      * @return double showResult of operations
      * @throws IllegalArgumentException if take non specified showResult or an showError in the calculation
      */
-    public double produce(double firstOperand, double secondOperand) throws MyException {
-        return typeOperator.produce(firstOperand, secondOperand);
+    public double produce(double firstOperand, double secondOperand) throws CallculationExceptions {
+        return operatorTypes.produce(firstOperand, secondOperand);
     }
 }

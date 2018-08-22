@@ -1,7 +1,6 @@
 package com.sysgears.calculator.user;
 
-import com.sysgears.calculator.calculation.operators.ListOperators;
-import com.sysgears.calculator.calculation.operators.TypeOperator;
+import com.sysgears.calculator.calculation.operators.OperatorTypes;
 
 import java.util.List;
 import java.util.Map;
@@ -36,7 +35,7 @@ public class Messages {
     /**
      * Show invitation string for data entry
      */
-    public void waitForInput() {
+    public void showWaitForInput() {
         userView.send("Введите команду или строку для просчета:");
     }
 
@@ -94,18 +93,18 @@ public class Messages {
         }
         userView.send("Поддерживаются целые числа, операторы и приоритетные разделители(скобки)");
         userView.send("Список операторов:");
-        ListOperators listOperators = new ListOperators();
+
         for (int i = 1; i < 6; i++) {
             userView.send("  -приоритет [" + i + "]: ");
-            for (Map.Entry<String, String> pair : listOperators.getOperators((byte) i).entrySet())
+            for (Map.Entry<String, String> pair : OperatorTypes.values()[0].getOperators((byte) i).entrySet())
                 userView.send("    " + pair.getKey() + " " + pair.getValue());
         }
         userView.send("  -разделители: ");
-        for (Map.Entry<String, String> pair : listOperators.getOperators((byte) 8).entrySet())
+        for (Map.Entry<String, String> pair : OperatorTypes.values()[0].getOperators((byte) 8).entrySet())
             userView.send("    " + pair.getKey() + " " + pair.getValue());
         userView.send("  -если перед или после разделителя вы не укажите оператор - он будет заменен на: ");
-        userView.send("    " + TypeOperator.DEF.getOperator().get(0) + " " + TypeOperator.DEF.getDescription());
-        userView.send("    пример: 2(5-2) воспринимается как 2" + TypeOperator.DEF.getOperator().get(0) + "(5-2)");
+        userView.send("    " + OperatorTypes.DEF.getOperator().get(0) + " " + OperatorTypes.DEF.getDescription());
+        userView.send("    пример: 2(5-2) воспринимается как 2" + OperatorTypes.DEF.getOperator().get(0) + "(5-2)");
         userView.send("==============================================================================");
     }
 }

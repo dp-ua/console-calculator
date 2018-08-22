@@ -1,7 +1,7 @@
 package com.sysgears.calculator;
 
 import com.sysgears.calculator.calculation.parse.MainParser;
-import com.sysgears.calculator.calculation.parse.exception.MyException;
+import com.sysgears.calculator.calculation.parse.exception.CallculationExceptions;
 import com.sysgears.calculator.history.AbstractStorage;
 import com.sysgears.calculator.history.History;
 import com.sysgears.calculator.history.StorageInMemory;
@@ -24,12 +24,12 @@ public class Main {
             AbstractStorage abstractStorage = new StorageInMemory();
             History history = new History(abstractStorage);
             Command command = new Command();
+            MainParser parser = new MainParser();
 
             while (true) {
                 String input="";
                 try {
-
-                    messages.waitForInput();
+                    messages.showWaitForInput();
                     input = userView.get().trim();
 
                     CommandType commandType = command.detectCommandType(input);
@@ -37,8 +37,6 @@ public class Main {
                         messages.showQuit();
                         break;
                     }
-
-
 
                     switch (commandType) {
                         case INTRO:
@@ -54,13 +52,12 @@ public class Main {
                             messages.showHelp();
                             break;
                         default:
-                            double result = new MainParser().calculate(input);
+                            double result = parser.calculate(input);
                             history.save(input+" Результат: " + result);
                             messages.showResult(result);
                     }
 
-
-                } catch (MyException e) {
+                } catch (CallculationExceptions e) {
                     history.save(input+" Результат: " + e.getMessage());
                     messages.showError(e.getMessage());
                 } catch (Exception e) {

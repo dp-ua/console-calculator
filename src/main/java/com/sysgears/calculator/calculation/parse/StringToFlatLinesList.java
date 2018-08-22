@@ -1,9 +1,9 @@
 package com.sysgears.calculator.calculation.parse;
 
 import com.sysgears.calculator.calculation.operators.Operator;
-import com.sysgears.calculator.calculation.operators.TypeOperator;
-import com.sysgears.calculator.calculation.parse.exception.MyException;
-import com.sysgears.calculator.calculation.parse.exception.TypeExtention;
+import com.sysgears.calculator.calculation.operators.OperatorTypes;
+import com.sysgears.calculator.calculation.parse.exception.CallculationExceptions;
+import com.sysgears.calculator.calculation.parse.exception.ExceptionTypes;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,19 +20,19 @@ public class StringToFlatLinesList {
      *
      * "Flat" string - string without brackets.
      * @return List of "flat" lines
-     * @throws MyException if there were errors during the parsing of the line
+     * @throws CallculationExceptions if there were errors during the parsing of the line
      */
-    public List<String> parse(String input) throws MyException {
+    public List<String> parse(String input) throws CallculationExceptions {
         List<String> list = new ArrayList<>();
 
-        if ("".equals(input.trim())) throw new MyException(TypeExtention.BLANK);
+        if ("".equals(input.trim())) throw new CallculationExceptions(ExceptionTypes.BLANK);
 
-        String defOperator = TypeOperator.DEF.getOperator().get(0);
-        String openBr = TypeOperator.OPENBRACKETS.getOperator().get(0);
-        String delimeter = TypeOperator.DELIMETER.getOperator().get(0);
-        String minus = TypeOperator.MINUS.getOperator().get(0);
+        String defOperator = OperatorTypes.DEF.getOperator().get(0);
+        String openBr = OperatorTypes.OPENBRACKETS.getOperator().get(0);
+        String delimeter = OperatorTypes.DELIMETER.getOperator().get(0);
+        String minus = OperatorTypes.MINUS.getOperator().get(0);
 
-        if (input.contains(delimeter)) throw new MyException(TypeExtention.STANDART);
+        if (input.contains(delimeter)) throw new CallculationExceptions(ExceptionTypes.STANDART);
 
         String pile = "";
         Stack<String> stack = new Stack<>();
@@ -41,14 +41,14 @@ public class StringToFlatLinesList {
             Operator operator = new Operator(c);
             if (c == minus.charAt(0) & "".equals(pile)) {
                 pile += minus;
-            } else if (operator.getTypeOperator()==TypeOperator.OPENBRACKETS) {
+            } else if (operator.getOperatorTypes()==OperatorTypes.OPENBRACKETS) {
                 if (pile.trim().length() > 0) {
                     stack.push(pile.trim());
                     stack.push(defOperator);
                 }
                 stack.push(openBr);
                 pile = "";
-            } else if (operator.getTypeOperator()==TypeOperator.CLOSEBRACKETS) {
+            } else if (operator.getOperatorTypes()==OperatorTypes.CLOSEBRACKETS) {
                 stack.push(pile);
                 pile = "";
                 while (!stack.empty()) {
@@ -62,7 +62,7 @@ public class StringToFlatLinesList {
                     }
                 }
                 if (stack.empty())
-                    throw new MyException(TypeExtention.BRACKETS);
+                    throw new CallculationExceptions(ExceptionTypes.BRACKETS);
             } else if (operator.isOperator()) {
                 stack.push(pile.trim());
                 stack.push(Character.toString(c));
@@ -82,7 +82,7 @@ public class StringToFlatLinesList {
             if (!"".equals(s)) list.add(0, s);
         }
 
-        if (list.contains(openBr)) throw new MyException(TypeExtention.BRACKETS);
+        if (list.contains(openBr)) throw new CallculationExceptions(ExceptionTypes.BRACKETS);
 
         return list;
     }

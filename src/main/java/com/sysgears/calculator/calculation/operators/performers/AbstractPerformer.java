@@ -1,6 +1,6 @@
 package com.sysgears.calculator.calculation.operators.performers;
 
-import com.sysgears.calculator.calculation.parse.exception.MyException;
+import com.sysgears.calculator.calculation.parse.exception.CallculationExceptions;
 
 /**
  * Defines a specific type of operation for the operator
@@ -12,8 +12,8 @@ public interface AbstractPerformer {
      * @param a - first operand
      * @param b - second operand
      * @return result of operation
-     * @throws MyException if take it while calculatoin
+     * @throws CallculationExceptions if take it while calculatoin
      */
 
-    double perform(double a, double b) throws MyException;
+    double perform(double a, double b) throws CallculationExceptions;
 }

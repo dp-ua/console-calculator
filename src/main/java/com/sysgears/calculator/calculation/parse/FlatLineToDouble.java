@@ -1,9 +1,9 @@
 package com.sysgears.calculator.calculation.parse;
 
 import com.sysgears.calculator.calculation.operators.Operator;
-import com.sysgears.calculator.calculation.operators.TypeOperator;
-import com.sysgears.calculator.calculation.parse.exception.MyException;
-import com.sysgears.calculator.calculation.parse.exception.TypeExtention;
+import com.sysgears.calculator.calculation.operators.OperatorTypes;
+import com.sysgears.calculator.calculation.parse.exception.CallculationExceptions;
+import com.sysgears.calculator.calculation.parse.exception.ExceptionTypes;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -17,19 +17,21 @@ class FlatLineToDouble {
     /**
      * Produce "flat" line
      *
+     * @param input
      * @return double showResult of calculation
      * @throws IllegalArgumentException take when wrong arguments
      * @throws StringIndexOutOfBoundsException wrong string
      */
-    double calculate(String input) throws MyException {
+    double calculate(String input) throws CallculationExceptions {
         double result;
         try {
             String flatString = input;
-            String delimeter = TypeOperator.DELIMETER.getOperator().get(0);
+            String delimeter = OperatorTypes.DELIMETER.getOperator().get(0);
 
             while (flatString.contains(delimeter)) {
                 int lastIndexOfDelimiter = flatString.lastIndexOf(delimeter);
-                flatString = flatString.substring(0, lastIndexOfDelimiter) + new FlatLineToDouble().calculate(flatString.substring(lastIndexOfDelimiter + 1));
+                flatString = flatString.substring(0, lastIndexOfDelimiter) +
+                        new FlatLineToDouble().calculate(flatString.substring(lastIndexOfDelimiter + 1));
             }
 
             List<String> list = new ArrayList<>(Arrays.asList(flatString.split(" ")));
@@ -40,7 +42,7 @@ class FlatLineToDouble {
                 if ((currentPosition + 2) < (list.size())) {
                     Operator nextOperator = new Operator(list.get(currentPosition + 2).charAt(0));
 
-                    if (operator.getTypeOperator().getPriority() < nextOperator.getTypeOperator().getPriority()) {
+                    if (operator.getOperatorTypes().getPriority() < nextOperator.getOperatorTypes().getPriority()) {
                         currentPosition += 2;
                         continue;
                     }
@@ -65,11 +67,11 @@ class FlatLineToDouble {
             else throw new IllegalArgumentException("");
 
         } catch (NumberFormatException e) {
-            throw new MyException(TypeExtention.DATA);
+            throw new CallculationExceptions(ExceptionTypes.DATA);
         } catch (IllegalArgumentException e) {
-            throw new MyException(TypeExtention.PARAMS);
+            throw new CallculationExceptions(ExceptionTypes.PARAMS);
         } catch (StringIndexOutOfBoundsException e) {
-            throw new MyException(TypeExtention.NAN);
+            throw new CallculationExceptions(ExceptionTypes.NAN);
         }
 
         return result;

@@ -1,16 +1,18 @@
 package com.sysgears.calculator.calculation.operators;
 
 import com.sysgears.calculator.calculation.operators.performers.*;
-import com.sysgears.calculator.calculation.parse.exception.MyException;
+import com.sysgears.calculator.calculation.parse.exception.CallculationExceptions;
 
 import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
 
 import static java.util.Arrays.asList;
 
 /**
  * List of all supported operators
  */
-public enum TypeOperator {
+public enum OperatorTypes {
 
     /**
      * List of opertarors. Format: operator, priority, description, isOperrator, Performer
@@ -26,7 +28,7 @@ public enum TypeOperator {
     CLOSEBRACKETS(asList(")","]","}"), (byte) 8, "закрывающая скобка", false,new Blank()),
     DELIMETER(asList("$"), (byte) 9, "служебный символ", false,new Blank()),
     NON(asList("non"), (byte) 0, "пустой оператор", false,new Blank()),
-    DEF(TypeOperator.MULT),
+    DEF(OperatorTypes.MULT),
     ;
 
     /**
@@ -54,14 +56,14 @@ public enum TypeOperator {
     /**
      * Sets the parameters the same as for the specified operator
      *
-     * @param typeOperator another TypeOperator
+     * @param operatorTypes another OperatorTypes
      */
-    TypeOperator(TypeOperator typeOperator) {
-        this.operator=typeOperator.operator;
-        this.priority=typeOperator.priority;
-        this.description=typeOperator.description;
-        this.isOperator=typeOperator.isOperator;
-        this.performer=typeOperator.performer;
+    OperatorTypes(OperatorTypes operatorTypes) {
+        this.operator= operatorTypes.operator;
+        this.priority= operatorTypes.priority;
+        this.description= operatorTypes.description;
+        this.isOperator= operatorTypes.isOperator;
+        this.performer= operatorTypes.performer;
     }
 
     /**
@@ -71,14 +73,14 @@ public enum TypeOperator {
      * @param priority - priority of operator
      * @param description - descriptions of operator
      * @param isOperator - Is the character an operator
-     * @param perfomer - action performed by the operator
+     * @param performer - action performed by the operator
      */
-    TypeOperator(List<String> operator, byte priority, String description, boolean isOperator, AbstractPerformer perfomer) {
+    OperatorTypes(List<String> operator, byte priority, String description, boolean isOperator, AbstractPerformer performer) {
         this.operator = operator;
         this.priority = priority;
         this.description = description;
         this.isOperator = isOperator;
-        this.performer=perfomer;
+        this.performer=performer;
     }
 
     /**
@@ -89,7 +91,7 @@ public enum TypeOperator {
      * @return double result of operations
      * @throws IllegalArgumentException if take non specified result of calculations
      */
-    public double produce(double firstOperand, double secondOperand) throws MyException {
+    public double produce(double firstOperand, double secondOperand) throws CallculationExceptions {
         return performer.perform(firstOperand,secondOperand);
     }
 
@@ -128,4 +130,17 @@ public enum TypeOperator {
     public boolean isOperator() {
         return isOperator;
     }
+
+    /**
+     * Get Map of operators with the specified priority
+     *
+     * @return Map<String,String>key - operator. value - description </String>
+     */
+    public Map<String, String> getOperators(byte priority) {
+        Map<String, String> map = new TreeMap<>();
+        for (OperatorTypes t : OperatorTypes.values())
+            if (t.getPriority() == priority) for (String s : t.getOperator()) map.put(s, t.getDescription());
+        return map;
+    }
+
 }

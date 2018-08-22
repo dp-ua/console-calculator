@@ -1,9 +1,7 @@
 package com.sysgears.calculator.calculation.parse;
 
-import com.sysgears.calculator.calculation.operators.TypeOperator;
-import com.sysgears.calculator.calculation.parse.FlatLineToDouble;
-import com.sysgears.calculator.calculation.parse.StringToFlatLinesList;
-import com.sysgears.calculator.calculation.parse.exception.MyException;
+import com.sysgears.calculator.calculation.operators.OperatorTypes;
+import com.sysgears.calculator.calculation.parse.exception.CallculationExceptions;
 
 import java.util.List;
 
@@ -20,9 +18,10 @@ public class MainParser {
      * <p>
      * "flat" strings - lines without brackets and all operations are linear
      *
+     * @param input raw expression
      * @return double showResult of operation
      */
-    public double calculate(String input) throws MyException {
+    public double calculate(String input) throws CallculationExceptions {
         StringToFlatLinesList stringToFlatLinesList = new StringToFlatLinesList();
         List<String> list = stringToFlatLinesList.parse(input);
 
@@ -30,9 +29,13 @@ public class MainParser {
         FlatLineToDouble flatLineToDouble = new FlatLineToDouble();
         for (String s : list) {
             if ("".equals(s.trim())) continue;
-            if (s.contains(TypeOperator.DELIMETER.getOperator().get(0))) {
-                finalFlatString.append(" ").append(flatLineToDouble.calculate(s));
-            } else finalFlatString.append(" ").append(s.trim());
+            if (s.contains(OperatorTypes.DELIMETER.getOperator().get(0))) {
+                finalFlatString
+                        .append(" ")
+                        .append(flatLineToDouble.calculate(s));
+            } else finalFlatString
+                    .append(" ")
+                    .append(s.trim());
         }
 
         return flatLineToDouble.calculate(finalFlatString.toString().trim());
