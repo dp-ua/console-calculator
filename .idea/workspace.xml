@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85ef7b74-d60b-483b-b6f4-dfe5bec268d8" name="Default" comment="complite project." />
+    <list default="true" id="85ef7b74-d60b-483b-b6f4-dfe5bec268d8" name="Default" comment="edit readme">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,24 +23,30 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="5" />
+          <entry key="md" value="97" />
+          <entry key="txt" value="31" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="5" />
+          <entry key="Markdown" value="97" />
+          <entry key="PLAIN_TEXT" value="31" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="java" value="8" />
+          <entry key="md" value="1" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JAVA" value="8" />
+          <entry key="Markdown" value="1" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
@@ -49,7 +57,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/calculator/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
@@ -57,6 +65,18 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="135">
+                <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -145,15 +165,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -203,7 +214,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/parser/operators/TestAbsOper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/parser/operators/AbstractOperators.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculations/operators/AbstractOperators.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculations/operators/TestOperator.java" />
@@ -254,6 +264,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/example/calculator/history/StorageInMemory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/calculator/calculation/operators/OperatorTypes.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/calculator/Main.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -427,7 +438,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538581075950" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538582811935" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../file-splitter" />
@@ -591,7 +602,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1533033229329</updated>
-      <workItem from="1538573146336" duration="3538000" />
+      <workItem from="1538573146336" duration="4080000" />
     </task>
     <task id="LOCAL-00001" summary="Небольшой рефакторинг функции парсинга&#10;избавился от одной ненужной проверки входных аргументов&#10;Откорректировал доки">
       <created>1533293044771</created>
@@ -768,7 +779,28 @@
       <option name="project" value="LOCAL" />
       <updated>1534926010625</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="edit readme">
+      <created>1538582342925</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1538582342925</updated>
+    </task>
+    <task id="LOCAL-00027" summary="edit readme">
+      <created>1538582464477</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1538582464477</updated>
+    </task>
+    <task id="LOCAL-00028" summary="edit readme">
+      <created>1538582498556</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1538582498556</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -804,7 +836,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3538000" />
+    <option name="totallyTimeSpent" value="4080000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -819,7 +851,7 @@
     <frame x="67" y="25" width="1213" height="999" extended-state="6" />
     <layout>
       <window_info id="Learn" weight="0.32990575" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989154" visible="true" weight="0.24764353" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989154" visible="true" weight="0.24764353" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -829,7 +861,7 @@
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.46637744" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33371693" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33371693" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -847,7 +879,7 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Maven Projects" order="6" visible="true" weight="0.16966581" />
+      <window_info anchor="right" id="Maven Projects" order="6" weight="0.16966581" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
   </component>
@@ -912,7 +944,8 @@
     <MESSAGE value="complite all performers." />
     <MESSAGE value="complite project." />
     <MESSAGE value="final version" />
-    <option name="LAST_COMMIT_MESSAGE" value="final version" />
+    <MESSAGE value="edit readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit readme" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -995,7 +1028,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/math/ParseString.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/logic/math/PolishParse.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/logic/operators/test.spec" />
     <entry file="file://$PROJECT_DIR$/src/main/java/history/testClass.java" />
@@ -1248,6 +1280,16 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="135">
+            <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
