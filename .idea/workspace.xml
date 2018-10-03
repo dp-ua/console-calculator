@@ -1,47 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85ef7b74-d60b-483b-b6f4-dfe5bec268d8" name="Default" comment="Корректировка доков">
+    <list default="true" id="85ef7b74-d60b-483b-b6f4-dfe5bec268d8" name="Default" comment="complite project.">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculations/Calculate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/Calculate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculations/operators/ListOperators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/operators/ListOperators.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculations/operators/Operator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/operators/Operator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculations/operators/TypeOperator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/operators/TypeOperator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculations/parse/FlatLineToDouble.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/parse/FlatLineToDouble.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculations/parse/StringToFlatLinesList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/parse/StringToFlatLinesList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/history/AbstractStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/history/AbstractStorage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/history/History.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/history/History.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/history/StorageInMemory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/history/StorageInMemory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/user/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/user/Command.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/user/CommandType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/user/CommandType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/user/ConsoleInOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/user/ConsoleInOut.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/user/Messages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/user/Messages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/user/UserInOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/user/UserInOut.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/user/UserView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/user/UserView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/sysgears/calculator/calculations/operators/OperatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sysgears/calculator/calculation/operators/OperatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/sysgears/calculator/calculations/parse/StringToFlatLinesListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sysgears/calculator/calculation/parse/StringToFlatLinesListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/calculator/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/operators/Operator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/calculator/calculation/operators/Operator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/operators/OperatorTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/calculator/calculation/operators/OperatorTypes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/operators/performers/AbstractPerformer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/calculator/calculation/operators/performers/AbstractPerformer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/operators/performers/Blank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/calculator/calculation/operators/performers/Blank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/operators/performers/Div.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/calculator/calculation/operators/performers/Div.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/operators/performers/Minus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/calculator/calculation/operators/performers/Minus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/operators/performers/Mod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/calculator/calculation/operators/performers/Mod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/operators/performers/Mult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/calculator/calculation/operators/performers/Mult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/operators/performers/Percent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/calculator/calculation/operators/performers/Percent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/operators/performers/Plus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/calculator/calculation/operators/performers/Plus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/operators/performers/Pow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/calculator/calculation/operators/performers/Pow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/parse/FlatLineToDouble.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/calculator/calculation/parse/FlatLineToDouble.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/parse/MainParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/calculator/calculation/parse/MainParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/parse/StringToFlatLinesList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/calculator/calculation/parse/StringToFlatLinesList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/parse/exception/CallculationExceptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/calculator/calculation/parse/exception/CallculationExceptions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/parse/exception/ExceptionTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/calculator/calculation/parse/exception/ExceptionTypes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/history/AbstractStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/calculator/history/AbstractStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/history/History.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/calculator/history/History.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/history/StorageInMemory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/calculator/history/StorageInMemory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/user/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/calculator/user/Command.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/user/CommandType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/calculator/user/CommandType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/user/ConsoleInOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/calculator/user/ConsoleInOut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/user/Messages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/calculator/user/Messages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/user/UserInOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/calculator/user/UserInOut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/user/UserView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/calculator/user/UserView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/sysgears/calculator/calculation/operators/OperatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/calculator/calculation/operators/OperatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/sysgears/calculator/calculation/parse/StringToFlatLinesListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/calculator/calculation/parse/StringToFlatLinesListTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1252645978">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.46" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="5" />
+          <entry key="xml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="5" />
+          <entry key="XML" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="8" />
+          <entry key="xml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="8" />
+          <entry key="XML" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FavoritesManager">
     <favorites_list name="simple-calculator" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sysgears/calculator/Main.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/calculator/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+            <state relative-caret-position="45">
+              <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -49,35 +94,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Calculate.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/Calculate.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Messages.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sysgears/calculator/user/Messages.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="44" column="7" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StringToFlatLinesList.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/parse/StringToFlatLinesList.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/calculator/history/StorageInMemory.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
-              <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+              <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -85,11 +106,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TypeOperator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/operators/TypeOperator.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/calculator/calculation/operators/performers/Blank.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+            <state relative-caret-position="90">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/calculator/calculation/operators/performers/Div.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="92" selection-start-line="6" selection-start-column="92" selection-end-line="6" selection-end-column="92" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -97,20 +127,62 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserInOut.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sysgears/calculator/user/UserInOut.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/calculator/calculation/operators/OperatorTypes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="405">
+              <caret line="27" column="26" lean-forward="true" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserView.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sysgears/calculator/user/UserView.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/calculator/calculation/operators/performers/Minus.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+            <state relative-caret-position="45">
+              <caret line="3" column="67" selection-start-line="3" selection-start-column="67" selection-end-line="3" selection-end-column="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/calculator/calculation/operators/performers/Mod.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/calculator/calculation/operators/performers/AbstractPerformer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/calculator/calculation/parse/StringToFlatLinesList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="64">
+              <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -120,11 +192,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Specification" />
         <option value="JUnit4 Test Class" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -142,6 +214,9 @@
       <find>throw new</find>
       <find>dete</find>
       <find>String s</find>
+      <find>+ &quot;&quot;</find>
+      <find>append</find>
+      <find>perfomer</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src/main/java</dir>
@@ -161,29 +236,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/calculator/logic/parse/CalcFlatString.java" />
-        <option value="$PROJECT_DIR$/src/main/java/calculator/user/Action.java" />
-        <option value="$PROJECT_DIR$/src/main/java/calculator/logic/parse/CalcFlatLines.java" />
-        <option value="$PROJECT_DIR$/src/main/java/calculator/user/UserView.java" />
-        <option value="$PROJECT_DIR$/src/test/java/calculator/logic/parse/CalcFlatLineTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/calculator/history/DataStorage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/calculator/user/Command.java" />
-        <option value="$PROJECT_DIR$/src/main/java/calculator/logic/operators/ListOperators.java" />
-        <option value="$PROJECT_DIR$/src/main/java/calculator/logic/operators/Operator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/calculator/logic/operators/TypeOperator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/calculator/logic/parse/CalcFlatLine.java" />
-        <option value="$PROJECT_DIR$/src/main/java/calculator/history/StorageInMemory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/calculator/user/CommandType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/calculator/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/calculator/logic/parse/ParseToList.java" />
-        <option value="$PROJECT_DIR$/src/main/java/calculator/user/UserInOut.java" />
-        <option value="$PROJECT_DIR$/src/main/java/calculator/user/ConsoleInOut.java" />
-        <option value="$PROJECT_DIR$/src/main/java/calculator/history/History.java" />
-        <option value="$PROJECT_DIR$/src/main/java/calculator/logic/parse/CalcFlatList.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/sysgears/calculator/logic/parse/ParseToListTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/sysgears/calculator/parser/parse/ParseToListTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/parser/parse/StringToList.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/parser/operators/TypeOperator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/parser/operators/TestAbsOper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/parser/operators/AbstractOperators.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculations/operators/AbstractOperators.java" />
@@ -196,24 +248,53 @@
         <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculations/parse/StringToList.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculations/Calculate.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculations/parse/FlatLineToDouble.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/operators/ListOperators.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/operators/Operator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/operators/TypeOperator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/parse/FlatLineToDouble.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/history/AbstractStorage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/history/History.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/history/StorageInMemory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/user/Command.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/user/CommandType.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/user/ConsoleInOut.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/Calculate.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/parse/StringToFlatLinesList.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/user/UserView.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/user/Messages.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/user/UserInOut.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/Calculate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/history/AbstractStorage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/operators/AbstractPerformer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/operators/performers/AbstractPerformer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/operators/Operator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/StringToDouble.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/sysgears/calculator/calculation/parse/StringToFlatLinesListTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/operators/performers/Pow.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/operators/performers/Plus.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/operators/performers/Percent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/operators/performers/Mult.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/operators/performers/Mod.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/operators/performers/Minus.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/operators/performers/Div.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/operators/performers/Blank.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/user/Command.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/parse/exception/TypeExtention.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/user/CommandType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/history/History.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/parse/StringToFlatLinesList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/parse/exception/TypeException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/parse/FlatLineToDouble.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/parse/exception/MyException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/parse/MainParser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/operators/TypeOperator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/operators/ListOperators.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/operators/OperatorTypes.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/user/Messages.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/parse/exception/CallculationExceptions.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/parse/exception/ExceptionTypes.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/history/StorageInMemory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/calculator/history/StorageInMemory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/calculator/calculation/operators/OperatorTypes.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/calculator/Main.java" />
       </list>
     </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -229,6 +310,16 @@
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="simple-com.sysgears.calculator" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="simple-com.sysgears.calculator" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="simple-com.sysgears.calculator" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
       </expand>
       <select />
     </treeState>
@@ -237,12 +328,14 @@
     <option name="jreName" value="1.8" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="231" />
-    <option name="y" value="48" />
-    <option name="width" value="1390" />
-    <option name="height" value="1000" />
+    <option name="x" value="67" />
+    <option name="y" value="27" />
+    <option name="width" value="1803" />
+    <option name="height" value="1053" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -283,25 +376,99 @@
             </path>
             <path>
               <item name="simple-calculator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simple-calculator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="calculator" type="462c0819:PsiDirectoryNode" />
+              <item name="calculation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simple-calculator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simple-calculator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="calculator" type="462c0819:PsiDirectoryNode" />
+              <item name="calculation" type="462c0819:PsiDirectoryNode" />
+              <item name="operators" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simple-calculator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simple-calculator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="calculator" type="462c0819:PsiDirectoryNode" />
+              <item name="calculation" type="462c0819:PsiDirectoryNode" />
+              <item name="operators" type="462c0819:PsiDirectoryNode" />
+              <item name="performers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simple-calculator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simple-calculator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="calculator" type="462c0819:PsiDirectoryNode" />
+              <item name="calculation" type="462c0819:PsiDirectoryNode" />
+              <item name="parse" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simple-calculator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simple-calculator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="calculator" type="462c0819:PsiDirectoryNode" />
+              <item name="history" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simple-calculator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simple-calculator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="calculator" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simple-calculator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simple-calculator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simple-calculator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simple-calculator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simple-calculator" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538580835823" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../file-splitter" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="Shelf.Project.Settings" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -310,17 +477,21 @@
       <recent name="history" />
       <recent name="logic.operators" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.sysgears.calculator.calculation.parse" />
       <recent name="com.sysgears" />
       <recent name="calculator" />
       <recent name="logic.operators" />
       <recent name="logic" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.sysgears.calculator.calculation.operators.performers" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -335,14 +506,35 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.sysgears.calculator.Main" />
-      <module name="simple-calculator" />
+  <component name="RunManager" selected="Application.Main (1)">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.calculator.Main" />
+      <module name="simple-com.sysgears.calculator" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.calculator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.sysgears.calculator.Main" />
+      <module name="simple-com.sysgears.calculator" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="ListToLineTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="simple-calculator" />
@@ -352,66 +544,12 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.sysgears.calculator.calculations.parse" />
       <option name="MAIN_CLASS_NAME" value="com.sysgears.calculator.calculations.parse.ListToLineTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="ListToLineTest.calcFlatList_OneBracket" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="simple-calculator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.sysgears.calculator.calculation.parse.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.sysgears.calculator.calculations.parse" />
-      <option name="MAIN_CLASS_NAME" value="com.sysgears.calculator.calculations.parse.ListToLineTest" />
-      <option name="METHOD_NAME" value="calcFlatList_OneBracket" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="OperatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="simple-calculator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.sysgears.calculator.calculation.operators.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.sysgears.calculator.calculation.operators" />
-      <option name="MAIN_CLASS_NAME" value="com.sysgears.calculator.calculation.operators.OperatorTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="StringToFlatLinesListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="simple-calculator" />
@@ -421,73 +559,58 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.sysgears.calculator.calculation.parse" />
       <option name="MAIN_CLASS_NAME" value="com.sysgears.calculator.calculation.parse.StringToFlatLinesListTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringToFlatLinesListTest.parseToList_use_Forbiden_Symbol_Error" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="simple-calculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sysgears.calculator.calculation.parse.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sysgears.calculator.calculation.parse" />
+      <option name="MAIN_CLASS_NAME" value="com.sysgears.calculator.calculation.parse.StringToFlatLinesListTest" />
+      <option name="METHOD_NAME" value="parseToList_use_Forbiden_Symbol_Error" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <list>
       <item itemvalue="JUnit.ListToLineTest" />
-      <item itemvalue="JUnit.ListToLineTest.calcFlatList_OneBracket" />
       <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.OperatorTest" />
       <item itemvalue="JUnit.StringToFlatLinesListTest" />
+      <item itemvalue="JUnit.StringToFlatLinesListTest.parseToList_use_Forbiden_Symbol_Error" />
+      <item itemvalue="Application.Main (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.StringToFlatLinesListTest.parseToList_use_Forbiden_Symbol_Error" />
         <item itemvalue="JUnit.StringToFlatLinesListTest" />
         <item itemvalue="JUnit.ListToLineTest" />
-        <item itemvalue="JUnit.OperatorTest" />
-        <item itemvalue="JUnit.ListToLineTest.calcFlatList_OneBracket" />
       </list>
     </recent_temporary>
   </component>
@@ -501,6 +624,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1533033229329</updated>
+      <workItem from="1538573146336" duration="3155000" />
     </task>
     <task id="LOCAL-00001" summary="Небольшой рефакторинг функции парсинга&#10;избавился от одной ненужной проверки входных аргументов&#10;Откорректировал доки">
       <created>1533293044771</created>
@@ -649,13 +773,38 @@
       <option name="project" value="LOCAL" />
       <updated>1533304621309</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="add Abstract performer">
+      <created>1534424798376</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1534424798376</updated>
+    </task>
+    <task id="LOCAL-00023" summary="complite all performers.">
+      <created>1534492450142</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1534492450142</updated>
+    </task>
+    <task id="LOCAL-00024" summary="complite project.">
+      <created>1534494430701</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1534494430701</updated>
+    </task>
+    <task id="LOCAL-00025" summary="final version">
+      <created>1534926010625</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1534926010625</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CalcListTest_calcFlatList_Simple - 2018.08.03 at 15h 37m 23s.xml">
-      <configuration name="CalcListTest.calcFlatList_Simple" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CalcListTest - 2018.08.03 at 15h 39m 06s.xml">
       <configuration name="CalcListTest" configurationId="JUnit" />
     </history-entry>
@@ -683,6 +832,12 @@
     <history-entry file="ParseToListTest - 2018.08.06 at 12h 20m 35s.xml">
       <configuration name="ParseToListTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="StringToFlatLinesListTest_parseToList_use_Forbiden_Symbol_Error - 2018.08.16 at 17h 00m 39s.xml">
+      <configuration name="StringToFlatLinesListTest.parseToList_use_Forbiden_Symbol_Error" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3155000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -694,38 +849,44 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <frame x="67" y="25" width="1213" height="999" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.329718" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="6" visible="true" weight="0.17044826" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.38611713" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989154" visible="true" weight="0.18262313" />
-      <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.329718" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
+      <window_info id="Learn" weight="0.32990575" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989154" visible="true" weight="0.24764353" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info id="Favorites" order="5" sideWeight="0.5010846" side_tool="true" weight="0.257886" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
-      <window_info anchor="bottom" id="Dependency Viewer" order="10" weight="0.329718" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.46637744" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33371693" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.329718" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.32911393" />
+      <window_info anchor="bottom" id="Dependency Viewer" order="10" weight="0.329718" />
+      <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.329718" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven Projects" order="6" visible="true" weight="0.16966581" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.History.Properties">
     <option name="COLUMN_ORDER">
@@ -781,7 +942,11 @@
     <MESSAGE value="Убрал ненужное" />
     <MESSAGE value="Рефакторинг &#10;замена строковой переменной на StringBuilder" />
     <MESSAGE value="Корректировка доков" />
-    <option name="LAST_COMMIT_MESSAGE" value="Корректировка доков" />
+    <MESSAGE value="add Abstract performer" />
+    <MESSAGE value="complite all performers." />
+    <MESSAGE value="complite project." />
+    <MESSAGE value="final version" />
+    <option name="LAST_COMMIT_MESSAGE" value="final version" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -799,13 +964,13 @@
           <option name="timeStamp" value="83" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="89" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="operator" />
         <watch expression="c" />
         <watch expression="stack" />
+        <watch expression="result" />
       </configuration>
     </watches-manager>
   </component>
@@ -864,339 +1029,259 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sysgears/calculator/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="47" column="18" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/math/ParseString.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/math/ParseString.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sysgears/calculator/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/test.java" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.sdkman/candidates/java/8.0.172-zulu/src.zip!/java/lang/Enum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="229" column="40" selection-start-line="229" selection-start-column="40" selection-end-line="229" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/operators/Brackets.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/logic/math/ParseString.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/logic/math/PolishParse.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/logic/operators/test.spec" />
     <entry file="file://$PROJECT_DIR$/src/main/java/history/testClass.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/calculator/logic/operators/ActionTest.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/statements/ExpectException.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/calculator/history/DataStory.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/calculator/history/DataStoryTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/calculator/logic/operators/Action.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/calculator/user/Action.java" />
+    <entry file="jar://$USER_HOME$/.sdkman/candidates/java/8.0.172-zulu/src.zip!/java/lang/String.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/calculator/logic/parse/CalcFlatLineTest.java" />
+    <entry file="jar://$USER_HOME$/.sdkman/candidates/java/8.0.172-zulu/src.zip!/java/lang/Exception.java" />
+    <entry file="jar://$USER_HOME$/.sdkman/candidates/java/8.0.172-zulu/src.zip!/java/lang/Throwable.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sysgears/calculator/parser/operators/TestAbsOper.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculations/operators/AbstractOperators.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculations/operators/TestOperator.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculations/parse/ListToLine.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/sysgears/calculator/calculations/parse/ListToLineTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/calculator/calculation/operators/OperatorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="208" selection-start-line="208" selection-end-line="208" />
+        <state relative-caret-position="405">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/statements/ExpectException.class">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/example/calculator/calculation/parse/StringToFlatLinesListTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        <state relative-caret-position="1455">
+          <caret line="103" column="74" selection-start-line="103" selection-start-column="74" selection-end-line="103" selection-end-column="74" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/calculator/calculation/operators/performers/Pow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="45">
+          <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/calculator/calculation/operators/performers/Mult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+          <folding>
+            <element signature="e#188#189#0" expanded="true" />
+            <element signature="e#214#215#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/calculator/user/UserInOut.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/calculator/user/UserView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/calculator/user/ConsoleInOut.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/calculator/user/CommandType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/calculator/user/Command.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/calculator/calculation/operators/performers/Plus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/calculator/calculation/operators/performers/Percent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/calculator/calculation/parse/MainParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="37" column="25" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/operators/ListOperators.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/calculator/user/Messages.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1230">
+          <caret line="95" selection-start-line="95" selection-end-line="95" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/calculator/calculation/parse/FlatLineToDouble.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/calculator/calculation/operators/Operator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/calculator/calculation/parse/exception/CallculationExceptions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/calculator/calculation/parse/exception/ExceptionTypes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/calculator/history/AbstractStorage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/calculator/history/History.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+          <folding>
+            <element signature="e#396#397#0" expanded="true" />
+            <element signature="e#450#451#0" expanded="true" />
+            <element signature="e#605#606#0" expanded="true" />
+            <element signature="e#652#653#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="20" lean-forward="true" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+        <state relative-caret-position="225">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/calculator/history/DataStory.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/calculator/history/DataStoryTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/calculator/logic/operators/Action.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/calculator/user/Action.java" />
-    <entry file="jar://$USER_HOME$/.sdkman/candidates/java/8.0.172-zulu/src.zip!/java/lang/String.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/calculator/calculation/parse/StringToFlatLinesList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-465">
-          <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
+        <state relative-caret-position="64">
+          <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/calculator/logic/parse/CalcFlatLineTest.java" />
-    <entry file="jar://$USER_HOME$/.sdkman/candidates/java/8.0.172-zulu/src.zip!/java/lang/Exception.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="44" column="36" selection-start-line="44" selection-start-column="36" selection-end-line="44" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.sdkman/candidates/java/8.0.172-zulu/src.zip!/java/lang/Throwable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="111" column="16" lean-forward="true" selection-start-line="111" selection-start-column="16" selection-end-line="111" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/sysgears/calculator/calculation/operators/OperatorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sysgears/calculator/parser/operators/TestAbsOper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
-          <folding>
-            <element signature="e#188#189#0" expanded="true" />
-            <element signature="e#138#139#0" expanded="true" />
-            <element signature="e#166#167#0" expanded="true" />
-            <element signature="e#199#200#0" expanded="true" />
-            <element signature="e#227#228#0" expanded="true" />
-            <element signature="e#367#368#0" expanded="true" />
-            <element signature="e#394#395#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculations/operators/AbstractOperators.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="43" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1181#1182#0" expanded="true" />
-            <element signature="e#1218#1219#0" expanded="true" />
-            <element signature="e#1257#1258#0" expanded="true" />
-            <element signature="e#1299#1300#0" expanded="true" />
-            <element signature="e#1341#1342#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculations/operators/TestOperator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-          <folding>
-            <element signature="e#311#312#0" expanded="true" />
-            <element signature="e#335#336#0" expanded="true" />
-            <element signature="e#373#374#0" expanded="true" />
-            <element signature="e#400#401#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculations/parse/ListToLine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="46" column="5" lean-forward="true" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/sysgears/calculator/calculation/parse/StringToFlatLinesListTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/sysgears/calculator/calculations/parse/ListToLineTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/operators/Operator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="687">
-          <caret line="68" column="99" lean-forward="true" selection-start-line="68" selection-start-column="40" selection-end-line="68" selection-end-column="99" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/operators/ListOperators.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/parse/FlatLineToDouble.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-397">
-          <caret line="34" column="59" lean-forward="true" selection-start-line="34" selection-start-column="59" selection-end-line="34" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sysgears/calculator/history/History.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="47" column="7" lean-forward="true" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sysgears/calculator/history/AbstractStorage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sysgears/calculator/history/StorageInMemory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#331#339#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sysgears/calculator/user/Command.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sysgears/calculator/user/CommandType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="40" column="6" lean-forward="true" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sysgears/calculator/user/ConsoleInOut.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/Calculate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/parse/StringToFlatLinesList.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/calculator/history/StorageInMemory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
-          <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sysgears/calculator/user/UserView.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/calculator/calculation/operators/performers/Blank.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+        <state relative-caret-position="90">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sysgears/calculator/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/calculator/calculation/operators/performers/Div.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+        <state relative-caret-position="90">
+          <caret line="6" column="92" selection-start-line="6" selection-start-column="92" selection-end-line="6" selection-end-column="92" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/operators/TypeOperator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/calculator/calculation/operators/performers/Minus.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+        <state relative-caret-position="45">
+          <caret line="3" column="67" selection-start-line="3" selection-start-column="67" selection-end-line="3" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/calculator/calculation/operators/performers/Mod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sysgears/calculator/user/Messages.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/calculator/calculation/operators/performers/AbstractPerformer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="44" column="7" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
+        <state relative-caret-position="225">
+          <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/calculator/calculation/operators/OperatorTypes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="26" lean-forward="true" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sysgears/calculator/user/UserInOut.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/calculator/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="45">
+          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
