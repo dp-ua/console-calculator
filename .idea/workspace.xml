@@ -1,40 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85ef7b74-d60b-483b-b6f4-dfe5bec268d8" name="Default" comment="complite project.">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/calculator/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/operators/Operator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/calculator/calculation/operators/Operator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/operators/OperatorTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/calculator/calculation/operators/OperatorTypes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/operators/performers/AbstractPerformer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/calculator/calculation/operators/performers/AbstractPerformer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/operators/performers/Blank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/calculator/calculation/operators/performers/Blank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/operators/performers/Div.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/calculator/calculation/operators/performers/Div.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/operators/performers/Minus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/calculator/calculation/operators/performers/Minus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/operators/performers/Mod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/calculator/calculation/operators/performers/Mod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/operators/performers/Mult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/calculator/calculation/operators/performers/Mult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/operators/performers/Percent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/calculator/calculation/operators/performers/Percent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/operators/performers/Plus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/calculator/calculation/operators/performers/Plus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/operators/performers/Pow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/calculator/calculation/operators/performers/Pow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/parse/FlatLineToDouble.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/calculator/calculation/parse/FlatLineToDouble.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/parse/MainParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/calculator/calculation/parse/MainParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/parse/StringToFlatLinesList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/calculator/calculation/parse/StringToFlatLinesList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/parse/exception/CallculationExceptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/calculator/calculation/parse/exception/CallculationExceptions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/calculation/parse/exception/ExceptionTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/calculator/calculation/parse/exception/ExceptionTypes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/history/AbstractStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/calculator/history/AbstractStorage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/history/History.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/calculator/history/History.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/history/StorageInMemory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/calculator/history/StorageInMemory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/user/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/calculator/user/Command.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/user/CommandType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/calculator/user/CommandType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/user/ConsoleInOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/calculator/user/ConsoleInOut.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/user/Messages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/calculator/user/Messages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/user/UserInOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/calculator/user/UserInOut.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sysgears/calculator/user/UserView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/calculator/user/UserView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/sysgears/calculator/calculation/operators/OperatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/calculator/calculation/operators/OperatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/sysgears/calculator/calculation/parse/StringToFlatLinesListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/calculator/calculation/parse/StringToFlatLinesListTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="85ef7b74-d60b-483b-b6f4-dfe5bec268d8" name="Default" comment="complite project." />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -460,7 +427,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538580835823" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538581075950" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../file-splitter" />
@@ -624,7 +591,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1533033229329</updated>
-      <workItem from="1538573146336" duration="3155000" />
+      <workItem from="1538573146336" duration="3538000" />
     </task>
     <task id="LOCAL-00001" summary="Небольшой рефакторинг функции парсинга&#10;избавился от одной ненужной проверки входных аргументов&#10;Откорректировал доки">
       <created>1533293044771</created>
@@ -837,7 +804,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3155000" />
+    <option name="totallyTimeSpent" value="3538000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -850,7 +817,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1213" height="999" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Learn" weight="0.32990575" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989154" visible="true" weight="0.24764353" />
