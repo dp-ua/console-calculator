@@ -6,12 +6,14 @@
 
 ***
 How to use:
-***
+
+
     Start Main.class 
     and write to console: **help**
 
 For exit type to console:
-***
+
+
     **exit**
 
 ***
