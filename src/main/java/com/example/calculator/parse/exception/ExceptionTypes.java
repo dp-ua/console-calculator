@@ -1,4 +1,4 @@
-package com.example.calculator.calculation.parse.exception;
+package com.example.calculator.parse.exception;
 
 /**
  * Types of exception handling.

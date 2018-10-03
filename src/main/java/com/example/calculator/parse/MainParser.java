@@ -1,7 +1,7 @@
-package com.example.calculator.calculation.parse;
+package com.example.calculator.parse;
 
-import com.example.calculator.calculation.operators.OperatorTypes;
-import com.example.calculator.calculation.parse.exception.CallculationExceptions;
+import com.example.calculator.parse.operators.OperatorTypes;
+import com.example.calculator.parse.exception.CallculationExceptions;
 
 import java.util.List;
 

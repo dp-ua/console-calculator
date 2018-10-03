@@ -1,6 +1,6 @@
 package com.example.calculator.user;
 
-import com.example.calculator.calculation.operators.OperatorTypes;
+import com.example.calculator.parse.operators.OperatorTypes;
 
 import java.util.List;
 import java.util.Map;

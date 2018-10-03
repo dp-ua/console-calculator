@@ -1,11 +1,11 @@
 package com.example.calculator;
 
-import com.example.calculator.calculation.parse.exception.CallculationExceptions;
+import com.example.calculator.parse.exception.CallculationExceptions;
 import com.example.calculator.history.AbstractStorage;
 import com.example.calculator.history.History;
 import com.example.calculator.history.StorageInMemory;
 import com.example.calculator.user.*;
-import com.example.calculator.calculation.parse.MainParser;
+import com.example.calculator.parse.MainParser;
 
 
 /**

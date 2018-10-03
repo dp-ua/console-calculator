@@ -1,6 +1,6 @@
-package com.example.calculator.calculation.operators.performers;
+package com.example.calculator.parse.operators.performers;
 
-import com.example.calculator.calculation.parse.exception.CallculationExceptions;
+import com.example.calculator.parse.exception.CallculationExceptions;
 
 /**
  * Defines a specific type of operation for the operator

@@ -1,6 +1,6 @@
-package com.example.calculator.calculation.operators;
+package com.example.calculator.parse.operators;
 
-import com.example.calculator.calculation.parse.exception.CallculationExceptions;
+import com.example.calculator.parse.exception.CallculationExceptions;
 
 /**
  * Parse and detect basics operators, which are indicated in the Enum TypeOperators

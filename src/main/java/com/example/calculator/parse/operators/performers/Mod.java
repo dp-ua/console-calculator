@@ -1,7 +1,7 @@
-package com.example.calculator.calculation.operators.performers;
+package com.example.calculator.parse.operators.performers;
 
-import com.example.calculator.calculation.parse.exception.CallculationExceptions;
-import com.example.calculator.calculation.parse.exception.ExceptionTypes;
+import com.example.calculator.parse.exception.CallculationExceptions;
+import com.example.calculator.parse.exception.ExceptionTypes;
 
 /**
  * Returns the remainder of a division

@@ -1,4 +1,4 @@
-package com.example.calculator.calculation.parse.exception;
+package com.example.calculator.parse.exception;
 
 /**
  * Exception handling that occurs during the costing process.

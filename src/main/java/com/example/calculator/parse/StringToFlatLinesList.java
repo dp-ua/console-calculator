@@ -1,9 +1,9 @@
-package com.example.calculator.calculation.parse;
+package com.example.calculator.parse;
 
-import com.example.calculator.calculation.operators.Operator;
-import com.example.calculator.calculation.operators.OperatorTypes;
-import com.example.calculator.calculation.parse.exception.CallculationExceptions;
-import com.example.calculator.calculation.parse.exception.ExceptionTypes;
+import com.example.calculator.parse.operators.Operator;
+import com.example.calculator.parse.operators.OperatorTypes;
+import com.example.calculator.parse.exception.CallculationExceptions;
+import com.example.calculator.parse.exception.ExceptionTypes;
 
 import java.util.ArrayList;
 import java.util.List;

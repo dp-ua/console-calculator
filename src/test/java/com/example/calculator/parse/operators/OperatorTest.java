@@ -1,4 +1,4 @@
-package com.example.calculator.calculation.operators;
+package com.example.calculator.parse.operators;
 
 import org.junit.Assert;
 import org.junit.Test;

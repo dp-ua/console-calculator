@@ -1,7 +1,7 @@
-package com.example.calculator.calculation.operators.performers;
+package com.example.calculator.parse.operators.performers;
 
-import com.example.calculator.calculation.parse.exception.CallculationExceptions;
-import com.example.calculator.calculation.parse.exception.ExceptionTypes;
+import com.example.calculator.parse.exception.CallculationExceptions;
+import com.example.calculator.parse.exception.ExceptionTypes;
 
 /**
  * It divides the number a by the number b. In the case of division by zero returns an error
